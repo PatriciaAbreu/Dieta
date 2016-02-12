@@ -121,5 +121,144 @@
             "quantidade": "50 gramas",
             "pontos": 53
         }]
-	}]
+	},{
+        "nome": "Doces (2)"
+        "itens": [{
+            "tipo": "Achocolatado",
+            "quantidade": "1 colher de sopa",
+            "pontos": 25
+        }, {
+            "tipo": "Alfajor",
+            "quantidade": "1 unidade",
+            "pontos": 90
+        }, {
+            "tipo": "Arroz doce",
+            "quantidade": "2 colheres de sopa",
+            "pontos": 35
+        }, {
+            "tipo": "Bis, deditos",
+            "quantidade": "2 unidade",
+            "pontos": 35
+        }, {
+            "tipo": "Biscoito doce",
+            "quantidade": "1 unidade",
+            "pontos": 30
+        }, {
+            "tipo": "Bolacha Maria/Maizena",
+            "quantidade": "3 unidade",
+            "pontos": 25
+        }, {
+            "tipo": "Bolo comum",
+            "quantidade": "1 fatia",
+            "pontos": 50
+        }, {
+            "tipo": "Bomba creme",
+            "quantidade": "1 unidade",
+            "pontos": 140
+        }, {
+            "tipo": "Bombom",
+            "quantidade": "1 unidade",
+            "pontos": 55
+        }, {
+            "tipo": "Brigadeiro",
+            "quantidade": "1 unidade",
+            "pontos": 30
+        }, {
+            "tipo": "Canjica",
+            "quantidade": "2 colheres de sopa",
+            "pontos": 45
+        }, {
+            "tipo": "Chocolate",
+            "quantidade": "1 unidade",
+            "pontos": 170
+        }, {
+            "tipo": "Coberturas",
+            "quantidade": "1 colher de sopa",
+            "pontos": 25
+        }, {
+            "tipo": "Cocada",
+            "quantidade": "1 unidade",
+            "pontos": 80
+        }, {
+            "tipo": "Danone",
+            "quantidade": "1 unidade",
+            "pontos": 70
+        }, {
+            "tipo": "Danoninho",
+            "quantidade": "1 unidade",
+            "pontos": 25
+        }, {
+            "tipo": "Doce de leite",
+            "quantidade": "2 colheres de sopa",
+            "pontos": 35
+        }, {
+            "tipo": "Fibrax",
+            "quantidade": "1 pacote",
+            "pontos": 45
+        }, {
+            "tipo": "Fios de ovos",
+            "quantidade": "1 porção",
+            "pontos": 80
+        }, {
+            "tipo": "Leite condensado",
+            "quantidade": "3 colheres de sopa",
+            "pontos": 60
+        }, {
+            "tipo": "Maria Mole",
+            "quantidade": "1 unidade",
+            "pontos": 70
+        }, {
+            "tipo": "Merengue",
+            "quantidade": "1 unidade",
+            "pontos": 80
+        }, {
+            "tipo": "Mousse",
+            "quantidade": "1 taça",
+            "pontos": 55
+        }, {
+            "tipo": "Paçoca",
+            "quantidade": "1 unidade",
+            "pontos": 45
+        }, {
+            "tipo": "Panetone",
+            "quantidade": "1 fatia fina",
+            "pontos": 35
+        }, {
+            "tipo": "Pé-de-moleque",
+            "quantidade": "1 unidade",
+            "pontos": 60
+        }, {
+            "tipo": "Quindim",
+            "quantidade": "1 porção",
+            "pontos": 90
+        }, {
+            "tipo": "Sonho",
+            "quantidade": "1 unidade",
+            "pontos": 140
+        }, {
+            "tipo": "Sorvete com leite",
+            "quantidade": "1 bola",
+            "pontos": 60
+        }, {
+            "tipo": "Sorvete com leite",
+            "quantidade": "1 picolé",
+            "pontos": 60
+        }, {
+            "tipo": "Toddinho",
+            "quantidade": "1 unidade",
+            "pontos": 50
+        }, {
+            "tipo": "Torta e pudim",
+            "quantidade": "1 fatia média",
+            "pontos": 75
+        }, {
+            "tipo": "Yakult",
+            "quantidade": "1 unidade",
+            "pontos": 45
+        }
+        }]
+    }]
+            
+        
+    
 }
