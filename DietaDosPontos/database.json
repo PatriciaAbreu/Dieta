@@ -1,0 +1,65 @@
+{
+	"categorias": [{
+		"nome": "Lanches",
+		"itens": [{
+			"tipo": "Americano",
+			"quantidade": "1 unidade",
+			"pontos": 160
+		}, {
+			"tipo": "Batata frita pequena",
+			"quantidade": "1 unidade",
+			"pontos": 80
+		}, {
+			"tipo": "Batata frita grande",
+			"quantidade": "1 unidade",
+			"pontos": 110
+		}, {
+			"tipo": "Bauru",
+			"quantidade": "1 unidade",
+			"pontos": 90
+		}, {
+			"tipo": "Beirute",
+			"quantidade": "1 unidade",
+			"pontos": 140
+		}, {
+			"tipo": "Big Mc",
+			"quantidade": "1 unidade",
+			"pontos": 155
+		}, {
+			"tipo": "Chicken Mc Nuggets",
+			"quantidade": "6 pedaços",
+			"pontos": 75
+		}]
+	}, {
+		"nome": "Doces (1)",
+		"itens": [{
+			"tipo": "Açucar",
+			"quantidade": "1 colher de sopa",
+			"pontos": 160
+		}, {
+			"tipo": "Açucar mascavo",
+			"quantidade": "1 colher de sopa",
+			"pontos": 80
+		}, {
+			"tipo": "Bala ou chiclete",
+			"quantidade": "1 unidade",
+			"pontos": 110
+		}, {
+			"tipo": "Doce abóbora/goiaba",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 90
+		}, {
+			"tipo": "Frutas cristalizadas",
+			"quantidade": "1/2 porção",
+			"pontos": 140
+		}, {
+			"tipo": "Gelatina",
+			"quantidade": "1 taça",
+			"pontos": 155
+		}, {
+			"tipo": "Geléia de frutas",
+			"quantidade": "1 colher de sopa",
+			"pontos": 75
+		}]
+	}]
+}
