@@ -18,6 +18,7 @@
 		8418CDD81C6D416C006AB236 /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = 8418CDD71C6D416C006AB236 /* database.json */; };
 		847F759E1C6D5DF7004B2E50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F759D1C6D5DF7004B2E50 /* HeaderView.swift */; };
 		847F75A01C6D634D004B2E50 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847F759F1C6D634D004B2E50 /* HeaderView.xib */; };
+		B7437D761C6E4AFF009C8F6E /* Lembrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7437D751C6E4AFF009C8F6E /* Lembrete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8418CDD71C6D416C006AB236 /* database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
 		847F759D1C6D5DF7004B2E50 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		847F759F1C6D634D004B2E50 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		B7437D751C6E4AFF009C8F6E /* Lembrete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lembrete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		8418CDAC1C6D38A2006AB236 = {
 			isa = PBXGroup;
 			children = (
+				B7437D751C6E4AFF009C8F6E /* Lembrete.swift */,
 				8418CDB71C6D38A2006AB236 /* DietaDosPontos */,
 				8418CDB61C6D38A2006AB236 /* Products */,
 			);
@@ -138,6 +141,7 @@
 				TargetAttributes = {
 					8418CDB41C6D38A2006AB236 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9CR59M86PD;
 					};
 				};
 			};
@@ -182,6 +186,7 @@
 				8418CDD41C6D404A006AB236 /* Item.swift in Sources */,
 				847F759E1C6D5DF7004B2E50 /* HeaderView.swift in Sources */,
 				8418CDD21C6D3C05006AB236 /* DefaultCell.swift in Sources */,
+				B7437D761C6E4AFF009C8F6E /* Lembrete.swift in Sources */,
 				8418CDB91C6D38A2006AB236 /* AppDelegate.swift in Sources */,
 				8418CDCE1C6D3973006AB236 /* TableViewController.swift in Sources */,
 				8418CDD61C6D40DE006AB236 /* Categoria.swift in Sources */,
@@ -299,10 +304,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.moris.DietaDosPontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -310,10 +318,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.moris.DietaDosPontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

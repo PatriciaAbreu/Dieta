@@ -8,6 +8,8 @@
 
 import UIKit
 
+var device: NSData!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        let notificationType : UIUserNotificationType = UIUserNotificationType.Badge
+//        let notificationSettings : UIUserNotificationSettings =      UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+//        application.registerUserNotificationSettings(notificationSettings)
+//        application.registerForRemoteNotifications()
+
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Badge, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Alert, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Sound, categories: nil))
+        
+        var lembrete = Lembrete()
+        lembrete.criarNotificacao()
+        
         return true
     }
 
@@ -41,6 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+//    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+//        print("Device")
+//        device = deviceToken
+//        print(device)
+//    }
 
 }
 

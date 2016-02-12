@@ -22,6 +22,9 @@ class TableViewController: UITableViewController, UISearchResultsUpdating, UISea
         self.searchController.searchBar.delegate = self
         self.definesPresentationContext = true
         self.tableView.tableHeaderView = self.searchController.searchBar
+        
+        
+        
     }
 
     override func viewDidAppear(animated: Bool) {
