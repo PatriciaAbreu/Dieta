@@ -256,6 +256,57 @@
             "quantidade": "1 unidade",
             "pontos": 45
         }
+        ]
+    },{
+        "nome": "Diet e light""
+        "itens": [{
+            "tipo": "Bala diet",
+            "quantidade": "1 unidade",
+            "pontos": 2
+        }, {
+            "tipo": "Capucciono diet",
+            "quantidade": "1 colher de chá",
+            "pontos": 5
+        }, {
+            "tipo": "Chocolate em pó diet",
+            "quantidade": "1 colher de chá",
+            "pontos": 10
+        }, {
+            "tipo": "Gelatina Diet",
+            "quantidade": "1 taça",
+            "pontos": 5
+        }, {
+            "tipo": "Geléia diet",
+            "quantidade": "1 colher de chá",
+            "pontos": 3
+        }, {
+            "tipo": "Iogurt diet",
+            "quantidade": "1 porção",
+            "pontos": 18
+        }, {
+            "tipo": "Hellmans light",
+            "quantidade": "1 colher de sopa",
+            "pontos": 20
+        }, {
+            "tipo": "Pudim diet",
+            "quantidade": "1 porção",
+            "pontos": 20
+        }, {
+            "tipo": "Queijo Danúbio diet",
+            "quantidade": "1 fatia grande",
+            "pontos": 20
+        }, {
+            "tipo": "Refresco diet",
+            "quantidade": "1 copo",
+            "pontos": 5
+        }, {
+            "tipo": "Sorvete de frutas diet",
+            "quantidade": "1 picolé",
+            "pontos": 12
+        }, {
+            "tipo": "Sorvete com leite diet",
+            "quantidade": "1 porção",
+            "pontos": 37
         }]
     }]
             
