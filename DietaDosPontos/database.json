@@ -29,37 +29,97 @@
 			"tipo": "Chicken Mc Nuggets",
 			"quantidade": "6 pedaços",
 			"pontos": 75
-		}]
+        }, {
+            "tipo": "Chicken Mc Nuggets",
+            "quantidade": "9 pedaços",
+            "pontos": 115
+        }, {
+            "tipo": "Cheeseburger",
+            "quantidade": "1 unidade",
+            "pontos": 87
+        }, {
+            "tipo": "Hamburguer",
+            "quantidade": "1 unidade",
+            "pontos": 72
+        }, {
+            "tipo": "Mc Chicken",
+            "quantidade": "1 unidade",
+            "pontos": 137
+        }, {
+            "tipo": "Mc Fish",
+            "quantidade": "1 unidade",
+            "pontos": 125
+        }, {
+            "tipo": "Misto Quente",
+            "quantidade": "1 unidade",
+            "pontos": 90
+        }, {
+            "tipo": "Molho Para Nuggets",
+            "quantidade": "1 unidade",
+            "pontos": 15
+        }, {
+            "tipo": "Quarteirão",
+            "quantidade": "1 unidade",
+            "pontos": 115
+        }, {
+            "tipo": "Quarteirão com Queijo",
+            "quantidade": "1 unidade",
+            "pontos": 145
+        }, {
+            "tipo": "Torta de maçã",
+            "quantidade": "1 unidade",
+            "pontos": 72
+        }]
 	}, {
 		"nome": "Doces (1)",
 		"itens": [{
 			"tipo": "Açucar",
 			"quantidade": "1 colher de sopa",
-			"pontos": 160
+			"pontos": 20
 		}, {
 			"tipo": "Açucar mascavo",
 			"quantidade": "1 colher de sopa",
-			"pontos": 80
+			"pontos": 20
 		}, {
 			"tipo": "Bala ou chiclete",
 			"quantidade": "1 unidade",
-			"pontos": 110
+			"pontos": 6
 		}, {
 			"tipo": "Doce abóbora/goiaba",
 			"quantidade": "2 colheres de sopa",
-			"pontos": 90
+			"pontos": 35
 		}, {
 			"tipo": "Frutas cristalizadas",
 			"quantidade": "1/2 porção",
-			"pontos": 140
+			"pontos": 44
 		}, {
 			"tipo": "Gelatina",
 			"quantidade": "1 taça",
-			"pontos": 155
+			"pontos": 19
 		}, {
 			"tipo": "Geléia de frutas",
 			"quantidade": "1 colher de sopa",
-			"pontos": 75
-		}]
+			"pontos": 12
+		}, {
+            "tipo": "Groselha",
+            "quantidade": "1 colher de sopa",
+            "pontos": 14
+        }, {
+            "tipo": "Mel",
+            "quantidade": "1 colher de sopa",
+            "pontos": 17
+        }, {
+            "tipo": "Sagu",
+            "quantidade": "2 colheres de sopa",
+            "pontos": 13
+        }, {
+            "tipo": "Sorvete de Frutas",
+            "quantidade": "1 picolé",
+            "pontos": 18
+        }, {
+            "tipo": "Suspiro",
+            "quantidade": "50 gramas",
+            "pontos": 53
+        }]
 	}]
 }
