@@ -18,18 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-//        let notificationType : UIUserNotificationType = UIUserNotificationType.Badge
-//        let notificationSettings : UIUserNotificationSettings =      UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-//        application.registerUserNotificationSettings(notificationSettings)
-//        application.registerForRemoteNotifications()
-
-        
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Badge, categories: nil))
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Alert, categories: nil))
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Sound, categories: nil))
         
-        var lembrete = Lembrete()
-        lembrete.criarNotificacao()
+        Lembrete.gerarLembretesParaXDias(7)
         
         return true
     }
