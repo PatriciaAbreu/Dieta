@@ -1,0 +1,5 @@
+/* Nome do app no dispositivo */
+"CFBundleDisplayName" = "Vida e Controle";
+
+/* Não tenho certeza, mas deve estar traduzido tambem */
+"CFBundleName" = "Vida e Controle";

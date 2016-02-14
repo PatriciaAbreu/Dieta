@@ -18,7 +18,7 @@ class Lembrete {
         
         for dia in 0 ..< dias {
             dataAtual.dateByAddingTimeInterval(NSTimeInterval(60 * 60 * 24 * dia))
-            for var hora = 6; hora <= 21; hora += 3 {
+            for var hora = 7; hora <= 19; hora += 3 {
                 dataAtual = calendario.dateBySettingHour(hora, minute: 0, second: 0, ofDate: dataAtual, options: NSCalendarOptions(rawValue: 0))!
                 
                 let lembrete = Lembrete()
@@ -26,18 +26,16 @@ class Lembrete {
                 lembrete.notification.timeZone = calendario.timeZone
                 
                 switch hora {
-                case 6:
+                case 7:
                     lembrete.notification.alertBody = "Algo as 6"
-                case 9:
+                case 10:
                     lembrete.notification.alertBody = "Algo as 9"
-                case 12:
+                case 13:
                     lembrete.notification.alertBody = "Algo as 12"
-                case 15:
+                case 16:
                     lembrete.notification.alertBody = "Algo as 15"
-                case 18:
+                case 19:
                     lembrete.notification.alertBody = "Algo as 18"
-                case 21:
-                    lembrete.notification.alertBody = "Algo as 21"
                 default:
                     break;
                 }
