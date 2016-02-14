@@ -336,6 +336,7 @@
 				TargetAttributes = {
 					8418CDB41C6D38A2006AB236 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9CR59M86PD;
 					};
 				};
 			};
@@ -559,7 +560,7 @@
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.dietadospontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DietaDosPontos/App-Header.h";
@@ -581,7 +582,7 @@
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.dietadospontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DietaDosPontos/App-Header.h";
