@@ -71,7 +71,9 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
         case 0:
-            self.controller.mostrarItensDoDia(nil)
+            if self.dataSource.count > 0 {
+                self.controller.mostrarItensDoDia(nil)
+            }
         default:
             let cell = tableView.cellForRowAtIndexPath(indexPath) as! CalendarCell
             self.controller.mostrarItensDoDia(cell.identifier)
@@ -88,7 +90,11 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         
         switch indexPath.row {
         case 0:
-            cell.lblData.text = "Todas as datas"
+            if self.dataSource.count == 0 {
+                cell.lblData.text = "Nenhum registro"
+            }else {
+                cell.lblData.text = "Todas as datas"
+            }
         default:
             let calendario = NSCalendar.currentCalendar()
             calendario.timeZone = NSTimeZone(abbreviation: "GMT")!

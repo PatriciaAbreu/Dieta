@@ -34,8 +34,8 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-cT-zqg" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
                                             <rect key="frame" x="551" y="2" width="50" height="50"/>
+                                            <inset key="contentEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <state key="normal" image="btn_add"/>
-                                            <state key="highlighted" image="btn_add_highlighted"/>
                                             <connections>
                                                 <action selector="adicionarPontos:" destination="faD-QQ-q50" eventType="touchUpInside" id="8gt-Ky-T5j"/>
                                             </connections>
@@ -47,8 +47,8 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="PA9-cT-zqg" secondAttribute="trailing" constant="5" id="1Zz-Jg-Sfn"/>
-                                        <constraint firstItem="PA9-cT-zqg" firstAttribute="leading" secondItem="snL-FV-P38" secondAttribute="trailing" constant="10" id="3Yc-Yf-Ecb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PA9-cT-zqg" secondAttribute="trailing" id="1Zz-Jg-Sfn"/>
+                                        <constraint firstItem="PA9-cT-zqg" firstAttribute="leading" secondItem="snL-FV-P38" secondAttribute="trailing" constant="5" id="3Yc-Yf-Ecb"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -78,8 +78,8 @@
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-lt-dCX" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
                                             <rect key="frame" x="550" y="2" width="50" height="50"/>
                                             <color key="tintColor" red="0.88235294119999996" green="0.2274509804" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="contentEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <state key="normal" image="btn_remove"/>
-                                            <state key="highlighted" image="btn_remove_highlighted"/>
                                             <connections>
                                                 <action selector="removerPontos:" destination="sh4-0w-BRM" eventType="touchUpInside" id="y9U-hg-V4A"/>
                                             </connections>
@@ -91,8 +91,8 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="1dW-lt-dCX" secondAttribute="trailing" constant="5" id="Mqv-Xb-ROi"/>
-                                        <constraint firstItem="1dW-lt-dCX" firstAttribute="leading" secondItem="wJR-Nj-DKR" secondAttribute="trailing" constant="10" id="VTc-lS-nnK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1dW-lt-dCX" secondAttribute="trailing" id="Mqv-Xb-ROi"/>
+                                        <constraint firstItem="1dW-lt-dCX" firstAttribute="leading" secondItem="wJR-Nj-DKR" secondAttribute="trailing" constant="5" id="VTc-lS-nnK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -209,10 +209,8 @@
     </scenes>
     <resources>
         <image name="btn_add" width="24" height="24"/>
-        <image name="btn_add_highlighted" width="32" height="32"/>
         <image name="btn_calendar" width="24" height="24"/>
         <image name="btn_menu" width="24" height="24"/>
         <image name="btn_remove" width="24" height="24"/>
-        <image name="btn_remove_highlighted" width="32" height="32"/>
     </resources>
 </document>

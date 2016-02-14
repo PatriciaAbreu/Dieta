@@ -68,9 +68,14 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         
         if self.categoriaSelecionada == nil {
             for categoria in self.currentDataSource {
-                let itens = categoria.itens.filter {
-                    item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+                var itens = categoria.itens
+                
+                if !textoDaBusca.isEmpty && textoDaBusca != " " {
+                    itens = itens.filter {
+                        item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+                    }
                 }
+                
                 if itens.count > 0 {
                     let novaCategoria = Categoria(nome: categoria.nome)
                     novaCategoria.itens = itens
@@ -88,9 +93,14 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                 categoria in return categoria.nome.lowercaseString == self.categoriaSelecionada!.lowercaseString
             }).first!
             
-            let itens = categoria.itens.filter {
-                item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+            var itens = categoria.itens
+            
+            if !textoDaBusca.isEmpty && textoDaBusca != " " {
+                itens = itens.filter {
+                    item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+                }
             }
+            
             if itens.count > 0 {
                 let novaCategoria = Categoria(nome: categoria.nome)
                 novaCategoria.itens = itens
