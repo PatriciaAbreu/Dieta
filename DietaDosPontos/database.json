@@ -648,6 +648,220 @@
 			"pontos": 35
 		}]
 	}, {
+		"nome": "Grupo (1)",
+		"itens": [{
+			"tipo": "Acelga",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Agrião",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Aipo",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Alface",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Alga marinha",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Almeirão",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Caruru",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Chicórea",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Couve",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Couve de bruxelas",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Erva doce",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Escarola",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Espinafre",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Folha de beterraba",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Jiló",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Maxixe",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Nabo",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Pimentão",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Rabanete",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Repolho",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Rúcula",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Salsão",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Taioba",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Tomate",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Sal",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Limão",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Alho",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Vinagre",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Cheiro verde",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Pimenta",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Refrigeirantes dietéticos",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Água",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Chicletes e balas sem açucar",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}, {
+			"tipo": "Café, chá e limonada com adoçante",
+			"quantidade": "À vontade",
+			"pontos": 0
+		}]
+	}, {
+		"nome": "Grupo (2)",
+		"itens": [{
+			"tipo": "Abóbora",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Abobrinha",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Alcachofra",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Berinjela",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Beterraba",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Brócolis",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Broto de bambu",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Broto de feijão",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Cebola",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Cebolinha",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Cenoura",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Chuchu",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Cogumelo",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Couve-flor",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Ervilha fresca",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Palmito",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Quiabo",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Vagem",
+			"quantidade": "2 colheres sopa",
+			"pontos": 10
+		}]
+	}, {
 		"nome": "Grupo (3)",
 		"itens": [{
 			"tipo": "Almôndega",
@@ -856,6 +1070,458 @@
 			"tipo": "Leite de soja",
 			"quantidade": "1/2 copo (100ml)",
 			"pontos": 15
+		}]
+	}, {
+		"nome": "Grupo (5)",
+		"itens": [{
+			"tipo": "Arroz cozido",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Arroz a grega",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Arroz integral",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Arroz a jardineira",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Aveia em flocos",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Bardona",
+			"quantidade": "2 pedaços pequenos",
+			"pontos": 20
+		}, {
+			"tipo": "Batata",
+			"quantidade": "1 unidade média",
+			"pontos": 20
+		}, {
+			"tipo": "Batata doce",
+			"quantidade": "1 unidade pequena",
+			"pontos": 20
+		}, {
+			"tipo": "Bolacha de água",
+			"quantidade": "3 unidades",
+			"pontos": 20
+		}, {
+			"tipo": "Cream craker",
+			"quantidade": "3 unidades",
+			"pontos": 20
+		}, {
+			"tipo": "Broa de milho",
+			"quantidade": "1/2 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Canelone",
+			"quantidade": "1 unidade média",
+			"pontos": 20
+		}, {
+			"tipo": "Capelete ou ravioli",
+			"quantidade": "1/2 xícara de chá",
+			"pontos": 20
+		}, {
+			"tipo": "Creme de milho",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Cuscuz",
+			"quantidade": "1 fatia média",
+			"pontos": 20
+		}, {
+			"tipo": "Farelo de aveia",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Farelo de trigo",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Farinhas em geral",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Fava",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Farofa",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Feijão, ervilha, lentilha",
+			"quantidade": "4 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Feijão branco",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Flocos de arroz",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Flocos de milho",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Fubá",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Gergelim",
+			"quantidade": "1 colher de sobremesa",
+			"pontos": 20
+		}, {
+			"tipo": "Germe de trigo",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Grão de bico",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Macarrão cozido",
+			"quantidade": "1 xícara de chá",
+			"pontos": 20
+		}, {
+			"tipo": "Maizena",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Mandioca",
+			"quantidade": "1 pedaço pequeno",
+			"pontos": 20
+		}, {
+			"tipo": "Mandioquinha",
+			"quantidade": "3 pedaços pequenos",
+			"pontos": 20
+		}, {
+			"tipo": "Matza",
+			"quantidade": "1 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Milho verde",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Nhoque",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Pão de centeio/torrada",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão comum/torrada",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão forma/torrada",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão frances",
+			"quantidade": "1/2 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "pão gluten/torrada",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão hot dog/hamburguer",
+			"quantidade": "1/3 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Pão integral/torrada",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão italiano",
+			"quantidade": "1 fatia pequena",
+			"pontos": 20
+		}, {
+			"tipo": "Pão de leite",
+			"quantidade": "1 fatia",
+			"pontos": 20
+		}, {
+			"tipo": "Pão de queijo",
+			"quantidade": "1 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Pão sirio",
+			"quantidade": "1 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Polenta assada",
+			"quantidade": "1 fatia pequena",
+			"pontos": 20
+		}, {
+			"tipo": "Pure de batata",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Risoto",
+			"quantidade": "1 1/2 coler de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Sucrilhos/granola",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Tapioca",
+			"quantidade": "2 colheres sopa rasas",
+			"pontos": 20
+		}, {
+			"tipo": "Trigo sarraceno",
+			"quantidade": "1 1/2 colher de sopa",
+			"pontos": 20
+		}]
+	}, {
+		"nome": "Grupo (6)",
+		"itens": [{
+			"tipo": "Creme de leite",
+			"quantidade": "1 1/2 colher chá",
+			"pontos": 15
+		}, {
+			"tipo": "Manteiga/margarina",
+			"quantidade": "1 colher chá rasa",
+			"pontos": 15
+		}, {
+			"tipo": "Óleo, azeite, bacon",
+			"quantidade": "1 colher chá rasa",
+			"pontos": 15
+		}]
+	}, {
+		"nome": "Grupo (7)",
+		"itens": [{
+			"tipo": "Abacate",
+			"quantidade": "1/2 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Abacaxi",
+			"quantidade": "1 rodela pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Abricó",
+			"quantidade": "1/2 xícara de chá",
+			"pontos": 11
+		}, {
+			"tipo": "Ameixa Amarela",
+			"quantidade": "2 unidades pequenas",
+			"pontos": 11
+		}, {
+			"tipo": "Ameixa seca",
+			"quantidade": "2 unidades pequenas",
+			"pontos": 11
+		}, {
+			"tipo": "Amora",
+			"quantidade": "1 pires de chá",
+			"pontos": 11
+		}, {
+			"tipo": "Banana nanica",
+			"quantidade": "1/2 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Banana maçã",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Banana ouro",
+			"quantidade": "2 unidades pequenas",
+			"pontos": 11
+		}, {
+			"tipo": "Banana prata",
+			"quantidade": "1 unidade média",
+			"pontos": 11
+		}, {
+			"tipo": "Caju",
+			"quantidade": "2 unidades médias",
+			"pontos": 11
+		}, {
+			"tipo": "Carambola",
+			"quantidade": "1 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Caqui",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Cereja",
+			"quantidade": "10 unidades",
+			"pontos": 11
+		}, {
+			"tipo": "Damasco",
+			"quantidade": "2 unidades médias",
+			"pontos": 11
+		}, {
+			"tipo": "Figo fresco",
+			"quantidade": "1 unidade média",
+			"pontos": 11
+		}, {
+			"tipo": "Framboesa",
+			"quantidade": "1/2 copo",
+			"pontos": 11
+		}, {
+			"tipo": "Fruta do conde",
+			"quantidade": "1/2 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Goiaba",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Grape fruit",
+			"quantidade": "1/2 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Jabuticaba",
+			"quantidade": "1 pires de chá",
+			"pontos": 11
+		}, {
+			"tipo": "Laranja",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Kiwi",
+			"quantidade": "1 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Lima da pérsia",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Maçã",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Mamão",
+			"quantidade": "1 fatia pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Manga",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Maracujá",
+			"quantidade": "1 unidade média",
+			"pontos": 11
+		}, {
+			"tipo": "Melancia",
+			"quantidade": "1 fatia pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Melão",
+			"quantidade": "1 fatia média",
+			"pontos": 11
+		}, {
+			"tipo": "Morango",
+			"quantidade": "10 unidades grandes",
+			"pontos": 11
+		}, {
+			"tipo": "Nectarina",
+			"quantidade": "1 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Papaia",
+			"quantidade": "1/4 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Passas",
+			"quantidade": "1 colher de sopa",
+			"pontos": 11
+		}, {
+			"tipo": "Pera",
+			"quantidade": "1 unidade pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Pessego",
+			"quantidade": "1 unidade média",
+			"pontos": 11
+		}, {
+			"tipo": "Pitanga",
+			"quantidade": "1 xícara de chá",
+			"pontos": 11
+		}, {
+			"tipo": "Salada de frutas",
+			"quantidade": "1/2 porção pequena",
+			"pontos": 11
+		}, {
+			"tipo": "Tamara",
+			"quantidade": "2 unidades",
+			"pontos": 11
+		}, {
+			"tipo": "Tangerina/mexerica",
+			"quantidade": "1 unidade",
+			"pontos": 11
+		}, {
+			"tipo": "Uva",
+			"quantidade": "12 unidades",
+			"pontos": 11
+		}]
+	}, {
+		"nome": "Queijos",
+		"itens": [{
+			"tipo": "Allouete natural",
+			"quantidade": "1 solher sopa rasa",
+			"pontos": 25
+		}, {
+			"tipo": "Camembert",
+			"quantidade": "1 fatia pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Gorgonzola e gruyere",
+			"quantidade": "1 fatia pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Minas",
+			"quantidade": "1 fatia pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Muzzarela de búfala",
+			"quantidade": "1/2 unidade pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Muzzarela comum",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
+		}, {
+			"tipo": "Parmesão",
+			"quantidade": "1 colher sopa rasa",
+			"pontos": 25
+		}, {
+			"tipo": "Polenguinho",
+			"quantidade": "1 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Prato",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
+		}, {
+			"tipo": "Provolone",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
+		}, {
+			"tipo": "Queijo de soja (tofu)",
+			"quantidade": "1 fatia grossa",
+			"pontos": 25
+		}, {
+			"tipo": "Requeijão",
+			"quantidade": "1 colheres de sobremesa",
+			"pontos": 25
+		}, {
+			"tipo": "Ricota",
+			"quantidade": "1 fatia grande",
+			"pontos": 25
+		}, {
+			"tipo": "Roquefort",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
 		}]
 	}]
 }
