@@ -35,7 +35,7 @@ class DefaultCell: UITableViewCell {
         
         let calendario = NSCalendar.currentCalendar()
         calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
-        var dataAtual = NSDate()
+        let dataAtual = NSDate()
         
         let day = calendario.component(NSCalendarUnit.Day, fromDate: dataAtual)
         let month = calendario.component(NSCalendarUnit.Month, fromDate: dataAtual)
@@ -68,5 +68,7 @@ class DefaultCell: UITableViewCell {
         database.add(item)
         
         database.commitWrite()
+        
+        self.controller.feedbackAdd(button)
     }
 }

@@ -23,6 +23,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
     var identificadorSelecionado:String? = nil
     var mostrandoHistorico = false
     
+    var feedbackView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.carregarDataSource()
@@ -277,6 +279,41 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
             self.mostrarItensDoDia(self.identificadorSelecionado)
         }else {
             self.mostrarItensDaCategoriaSelecionada()
+        }
+    }
+    
+    func feedbackAdd(button:AddButton) {
+        if self.feedbackView == nil {
+            let img =
+            UIImage(named: "btn_added")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.feedbackView = UIImageView(image: img)
+            self.feedbackView.tintColor = UIColor(hexString: "#007AFF")
+            
+            self.navigationController!.view.addSubview(self.feedbackView)
+        }
+    
+        self.navigationController!.view.bringSubviewToFront(self.feedbackView)
+        
+        self.feedbackView.alpha = 0.0
+        self.feedbackView.center = self.navigationController!.view.convertPoint(button.center, fromView: button.superview!)
+        
+        UIView.animateWithDuration(0.25) { () -> Void in
+            self.feedbackView.frame = CGRect(origin: self.feedbackView.frame.origin, size: CGSize(width: 32, height: 32))
+            self.feedbackView.alpha = 1.0
+        }
+        
+        delay(0.25) { () -> () in
+            UIView.animateWithDuration(0.5) { () -> Void in
+                self.feedbackView.frame = CGRect(origin: CGPoint(x: 25, y: 35), size: CGSize(width: 10, height: 10))
+                self.feedbackView.alpha = 0.5
+            }
+            
+            delay(0.5) { () -> () in
+                UIView.animateWithDuration(0.25) { () -> Void in
+                    self.feedbackView.frame = CGRect(origin: CGPoint(x: 25, y: 35), size: CGSize(width: 0, height: 0))
+                    self.feedbackView.alpha = 0.0
+                }
+            }
         }
     }
 }
