@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  BasicSDK
+
+  Created by Rafael Moris on 23/07/15.
+  Copyright (c) 2015 Interacton. All rights reserved.
+*/
+
+
+"Fechar" = "Close";
+
+"Choose your opponent" = "Choose your opponent";
+
+"Coming soon" = "Coming soon";
+
+"How to play" = "How to play";
+
+"Click to play" = "Click to play";
+
+"Matches played" = "Matches played";
+
+"Matches won" = "Matches won";
+
+"number of victories" = "%@ of victories";
+
+"You" = "You";
+
+"Opponent" = "Opponent";
+
+"You win this round" = "You win this round";
+
+"You tied this round" = "You tied this round";
+
+"You lose this round" = "You lose this round";
+
+"Flick up to choose" = "Flick up to choose";
+
+"Flick down to choose" = "Flick down to choose";
+
+"Flick right to choose" = "Flick right to choose";
+
+"Flick left to choose" = "Flick left to choose";
+
+"Click once to delete the last letter" = "Click once to delete the last letter";
+
+"Click twice to delete all letters" = "Click twice to delete all letters";

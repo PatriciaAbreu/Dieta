@@ -11,15 +11,58 @@
 		8418CDBE1C6D38A2006AB236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8418CDBC1C6D38A2006AB236 /* Main.storyboard */; };
 		8418CDC01C6D38A2006AB236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8418CDBF1C6D38A2006AB236 /* Assets.xcassets */; };
 		8418CDC31C6D38A2006AB236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8418CDC11C6D38A2006AB236 /* LaunchScreen.storyboard */; };
-		8418CDCE1C6D3973006AB236 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418CDCD1C6D3973006AB236 /* TableViewController.swift */; };
+		8418CDCE1C6D3973006AB236 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418CDCD1C6D3973006AB236 /* MainTableViewController.swift */; };
 		8418CDD21C6D3C05006AB236 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418CDD11C6D3C05006AB236 /* DefaultCell.swift */; };
 		8418CDD41C6D404A006AB236 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418CDD31C6D404A006AB236 /* Item.swift */; };
 		8418CDD61C6D40DE006AB236 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418CDD51C6D40DE006AB236 /* Categoria.swift */; };
 		8418CDD81C6D416C006AB236 /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = 8418CDD71C6D416C006AB236 /* database.json */; };
+		844553FA1C6F540F006557A5 /* Lembrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844553F91C6F540F006557A5 /* Lembrete.swift */; };
 		847F759E1C6D5DF7004B2E50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F759D1C6D5DF7004B2E50 /* HeaderView.swift */; };
 		847F75A01C6D634D004B2E50 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847F759F1C6D634D004B2E50 /* HeaderView.xib */; };
-		B7437D761C6E4AFF009C8F6E /* Lembrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7437D751C6E4AFF009C8F6E /* Lembrete.swift */; };
+		84E399B01C6F67C70034EAC0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399AF1C6F67C70034EAC0 /* MenuViewController.swift */; };
+		84E399B21C6F841A0034EAC0 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E399B11C6F841A0034EAC0 /* Menu.xib */; };
+		84E399B71C6F8D480034EAC0 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399B61C6F8D480034EAC0 /* Dispatch.swift */; };
+		84E399D01C6F8DFD0034EAC0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399BB1C6F8DFD0034EAC0 /* App.swift */; };
+		84E399D11C6F8DFD0034EAC0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399BD1C6F8DFD0034EAC0 /* Calendar.swift */; };
+		84E399D21C6F8DFD0034EAC0 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399BE1C6F8DFD0034EAC0 /* Math.swift */; };
+		84E399D31C6F8DFD0034EAC0 /* String+FKString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399BF1C6F8DFD0034EAC0 /* String+FKString.swift */; };
+		84E399D41C6F8DFD0034EAC0 /* UIButton+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399C01C6F8DFD0034EAC0 /* UIButton+Convenience.swift */; };
+		84E399D51C6F8DFD0034EAC0 /* UIColor+HexRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399C11C6F8DFD0034EAC0 /* UIColor+HexRGB.swift */; };
+		84E399D61C6F8DFD0034EAC0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399C31C6F8DFD0034EAC0 /* Device.swift */; };
+		84E399D71C6F8DFD0034EAC0 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E399C51C6F8DFD0034EAC0 /* DeviceInfo.m */; };
+		84E399D91C6F8DFD0034EAC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84E399C91C6F8DFD0034EAC0 /* Localizable.strings */; };
+		84E399DA1C6F8DFD0034EAC0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399CB1C6F8DFD0034EAC0 /* Localizable.swift */; };
+		84E399DB1C6F8DFD0034EAC0 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399CE1C6F8DFD0034EAC0 /* Screen.swift */; };
+		84E399DC1C6F8DFD0034EAC0 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399CF1C6F8DFD0034EAC0 /* Style.swift */; };
+		84E399DF1C6FA56D0034EAC0 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399DE1C6FA56D0034EAC0 /* CategoryCell.swift */; };
+		84E399E11C70098C0034EAC0 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399E01C70098C0034EAC0 /* AddButton.swift */; };
+		84E399E31C700B8F0034EAC0 /* Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E399E21C700B8F0034EAC0 /* Calendar.xib */; };
+		84E399E51C700BB60034EAC0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399E41C700BB60034EAC0 /* CalendarViewController.swift */; };
+		84E399EC1C700DD70034EAC0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E399E81C700DC90034EAC0 /* Realm.framework */; };
+		84E399ED1C700DD70034EAC0 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E399E81C700DC90034EAC0 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E399EF1C700DDA0034EAC0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E399E91C700DC90034EAC0 /* RealmSwift.framework */; };
+		84E399F01C700DDA0034EAC0 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E399E91C700DC90034EAC0 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E399F41C700E980034EAC0 /* ItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399F31C700E980034EAC0 /* ItemObject.swift */; };
+		84E399F81C700F620034EAC0 /* HistoricoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399F71C700F620034EAC0 /* HistoricoObject.swift */; };
+		84E399FA1C7010460034EAC0 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399F91C7010460034EAC0 /* RealmManager.swift */; };
+		84E399FC1C70216D0034EAC0 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399FB1C70216D0034EAC0 /* CalendarCell.swift */; };
+		84E399FE1C7024210034EAC0 /* RemoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399FD1C7024210034EAC0 /* RemoveCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84E399EE1C700DD80034EAC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E399F01C700DDA0034EAC0 /* RealmSwift.framework in Embed Frameworks */,
+				84E399ED1C700DD70034EAC0 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8418CDB51C6D38A2006AB236 /* DietaDosPontos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DietaDosPontos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,14 +71,43 @@
 		8418CDBF1C6D38A2006AB236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8418CDC21C6D38A2006AB236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8418CDC41C6D38A2006AB236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8418CDCD1C6D3973006AB236 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8418CDCD1C6D3973006AB236 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8418CDD11C6D3C05006AB236 /* DefaultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		8418CDD31C6D404A006AB236 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8418CDD51C6D40DE006AB236 /* Categoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		8418CDD71C6D416C006AB236 /* database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
+		844553F91C6F540F006557A5 /* Lembrete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lembrete.swift; sourceTree = "<group>"; };
 		847F759D1C6D5DF7004B2E50 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		847F759F1C6D634D004B2E50 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
-		B7437D751C6E4AFF009C8F6E /* Lembrete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lembrete.swift; sourceTree = "<group>"; };
+		84E399AF1C6F67C70034EAC0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		84E399B11C6F841A0034EAC0 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
+		84E399B61C6F8D480034EAC0 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		84E399BB1C6F8DFD0034EAC0 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		84E399BD1C6F8DFD0034EAC0 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		84E399BE1C6F8DFD0034EAC0 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		84E399BF1C6F8DFD0034EAC0 /* String+FKString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FKString.swift"; sourceTree = "<group>"; };
+		84E399C01C6F8DFD0034EAC0 /* UIButton+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Convenience.swift"; sourceTree = "<group>"; };
+		84E399C11C6F8DFD0034EAC0 /* UIColor+HexRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexRGB.swift"; sourceTree = "<group>"; };
+		84E399C31C6F8DFD0034EAC0 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		84E399C41C6F8DFD0034EAC0 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		84E399C51C6F8DFD0034EAC0 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		84E399CA1C6F8DFD0034EAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84E399CB1C6F8DFD0034EAC0 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		84E399CC1C6F8DFD0034EAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		84E399CE1C6F8DFD0034EAC0 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		84E399CF1C6F8DFD0034EAC0 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		84E399DD1C6F8E740034EAC0 /* App-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "App-Header.h"; path = "DietaDosPontos/App-Header.h"; sourceTree = SOURCE_ROOT; };
+		84E399DE1C6FA56D0034EAC0 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		84E399E01C70098C0034EAC0 /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		84E399E21C700B8F0034EAC0 /* Calendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calendar.xib; sourceTree = "<group>"; };
+		84E399E41C700BB60034EAC0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		84E399E81C700DC90034EAC0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		84E399E91C700DC90034EAC0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		84E399F31C700E980034EAC0 /* ItemObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemObject.swift; sourceTree = "<group>"; };
+		84E399F71C700F620034EAC0 /* HistoricoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoObject.swift; sourceTree = "<group>"; };
+		84E399F91C7010460034EAC0 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		84E399FB1C70216D0034EAC0 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		84E399FD1C7024210034EAC0 /* RemoveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E399EF1C700DDA0034EAC0 /* RealmSwift.framework in Frameworks */,
+				84E399EC1C700DD70034EAC0 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +126,6 @@
 		8418CDAC1C6D38A2006AB236 = {
 			isa = PBXGroup;
 			children = (
-				B7437D751C6E4AFF009C8F6E /* Lembrete.swift */,
 				8418CDB71C6D38A2006AB236 /* DietaDosPontos */,
 				8418CDB61C6D38A2006AB236 /* Products */,
 			);
@@ -69,11 +142,15 @@
 		8418CDB71C6D38A2006AB236 /* DietaDosPontos */ = {
 			isa = PBXGroup;
 			children = (
+				84E399F21C700E8C0034EAC0 /* DBObject */,
+				84E399B51C6F8D480034EAC0 /* Helper */,
 				8418CDD71C6D416C006AB236 /* database.json */,
 				8418CDCA1C6D3945006AB236 /* Controller */,
 				8418CDCB1C6D3945006AB236 /* Model */,
 				8418CDCC1C6D3945006AB236 /* View */,
+				84E399B81C6F8DFD0034EAC0 /* Frameworks */,
 				8418CDB81C6D38A2006AB236 /* AppDelegate.swift */,
+				84E399DD1C6F8E740034EAC0 /* App-Header.h */,
 				8418CDBF1C6D38A2006AB236 /* Assets.xcassets */,
 				8418CDC41C6D38A2006AB236 /* Info.plist */,
 			);
@@ -83,7 +160,9 @@
 		8418CDCA1C6D3945006AB236 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8418CDCD1C6D3973006AB236 /* TableViewController.swift */,
+				8418CDCD1C6D3973006AB236 /* MainTableViewController.swift */,
+				84E399AF1C6F67C70034EAC0 /* MenuViewController.swift */,
+				84E399E41C700BB60034EAC0 /* CalendarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,7 +170,11 @@
 		8418CDCB1C6D3945006AB236 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				844553F91C6F540F006557A5 /* Lembrete.swift */,
 				8418CDD11C6D3C05006AB236 /* DefaultCell.swift */,
+				84E399FD1C7024210034EAC0 /* RemoveCell.swift */,
+				84E399DE1C6FA56D0034EAC0 /* CategoryCell.swift */,
+				84E399FB1C70216D0034EAC0 /* CalendarCell.swift */,
 				8418CDD31C6D404A006AB236 /* Item.swift */,
 				8418CDD51C6D40DE006AB236 /* Categoria.swift */,
 			);
@@ -103,10 +186,117 @@
 			children = (
 				8418CDBC1C6D38A2006AB236 /* Main.storyboard */,
 				8418CDC11C6D38A2006AB236 /* LaunchScreen.storyboard */,
-				847F759D1C6D5DF7004B2E50 /* HeaderView.swift */,
 				847F759F1C6D634D004B2E50 /* HeaderView.xib */,
+				847F759D1C6D5DF7004B2E50 /* HeaderView.swift */,
+				84E399B11C6F841A0034EAC0 /* Menu.xib */,
+				84E399E21C700B8F0034EAC0 /* Calendar.xib */,
+				84E399E01C70098C0034EAC0 /* AddButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84E399B51C6F8D480034EAC0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84E399B61C6F8D480034EAC0 /* Dispatch.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84E399B81C6F8DFD0034EAC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E399E61C700DC90034EAC0 /* Dependencies */,
+				84E399B91C6F8DFD0034EAC0 /* FanateeKit */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E399B91C6F8DFD0034EAC0 /* FanateeKit */ = {
+			isa = PBXGroup;
+			children = (
+				84E399BA1C6F8DFD0034EAC0 /* App */,
+				84E399BC1C6F8DFD0034EAC0 /* Common */,
+				84E399C21C6F8DFD0034EAC0 /* Device */,
+				84E399C81C6F8DFD0034EAC0 /* Localizable */,
+				84E399CD1C6F8DFD0034EAC0 /* Style */,
+			);
+			path = FanateeKit;
+			sourceTree = "<group>";
+		};
+		84E399BA1C6F8DFD0034EAC0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84E399BB1C6F8DFD0034EAC0 /* App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84E399BC1C6F8DFD0034EAC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84E399F91C7010460034EAC0 /* RealmManager.swift */,
+				84E399BD1C6F8DFD0034EAC0 /* Calendar.swift */,
+				84E399BE1C6F8DFD0034EAC0 /* Math.swift */,
+				84E399BF1C6F8DFD0034EAC0 /* String+FKString.swift */,
+				84E399C01C6F8DFD0034EAC0 /* UIButton+Convenience.swift */,
+				84E399C11C6F8DFD0034EAC0 /* UIColor+HexRGB.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84E399C21C6F8DFD0034EAC0 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				84E399C31C6F8DFD0034EAC0 /* Device.swift */,
+				84E399C41C6F8DFD0034EAC0 /* DeviceInfo.h */,
+				84E399C51C6F8DFD0034EAC0 /* DeviceInfo.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		84E399C81C6F8DFD0034EAC0 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				84E399C91C6F8DFD0034EAC0 /* Localizable.strings */,
+				84E399CB1C6F8DFD0034EAC0 /* Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		84E399CD1C6F8DFD0034EAC0 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				84E399CE1C6F8DFD0034EAC0 /* Screen.swift */,
+				84E399CF1C6F8DFD0034EAC0 /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		84E399E61C700DC90034EAC0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				84E399E71C700DC90034EAC0 /* Realm */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		84E399E71C700DC90034EAC0 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				84E399E81C700DC90034EAC0 /* Realm.framework */,
+				84E399E91C700DC90034EAC0 /* RealmSwift.framework */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		84E399F21C700E8C0034EAC0 /* DBObject */ = {
+			isa = PBXGroup;
+			children = (
+				84E399F71C700F620034EAC0 /* HistoricoObject.swift */,
+				84E399F31C700E980034EAC0 /* ItemObject.swift */,
+			);
+			path = DBObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +309,8 @@
 				8418CDB11C6D38A2006AB236 /* Sources */,
 				8418CDB21C6D38A2006AB236 /* Frameworks */,
 				8418CDB31C6D38A2006AB236 /* Resources */,
+				84E399EE1C700DD80034EAC0 /* Embed Frameworks */,
+				84E399F11C700DE20034EAC0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -141,7 +333,6 @@
 				TargetAttributes = {
 					8418CDB41C6D38A2006AB236 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 9CR59M86PD;
 					};
 				};
 			};
@@ -152,6 +343,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 8418CDAC1C6D38A2006AB236;
 			productRefGroup = 8418CDB61C6D38A2006AB236 /* Products */;
@@ -169,27 +361,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				8418CDC31C6D38A2006AB236 /* LaunchScreen.storyboard in Resources */,
+				84E399B21C6F841A0034EAC0 /* Menu.xib in Resources */,
 				847F75A01C6D634D004B2E50 /* HeaderView.xib in Resources */,
+				84E399D91C6F8DFD0034EAC0 /* Localizable.strings in Resources */,
 				8418CDC01C6D38A2006AB236 /* Assets.xcassets in Resources */,
 				8418CDD81C6D416C006AB236 /* database.json in Resources */,
 				8418CDBE1C6D38A2006AB236 /* Main.storyboard in Resources */,
+				84E399E31C700B8F0034EAC0 /* Calendar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84E399F11C700DE20034EAC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8418CDB11C6D38A2006AB236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E399D11C6F8DFD0034EAC0 /* Calendar.swift in Sources */,
+				84E399D41C6F8DFD0034EAC0 /* UIButton+Convenience.swift in Sources */,
+				84E399B71C6F8D480034EAC0 /* Dispatch.swift in Sources */,
+				84E399F41C700E980034EAC0 /* ItemObject.swift in Sources */,
+				84E399D71C6F8DFD0034EAC0 /* DeviceInfo.m in Sources */,
+				84E399FE1C7024210034EAC0 /* RemoveCell.swift in Sources */,
+				84E399E51C700BB60034EAC0 /* CalendarViewController.swift in Sources */,
 				8418CDD41C6D404A006AB236 /* Item.swift in Sources */,
 				847F759E1C6D5DF7004B2E50 /* HeaderView.swift in Sources */,
+				84E399F81C700F620034EAC0 /* HistoricoObject.swift in Sources */,
+				84E399D01C6F8DFD0034EAC0 /* App.swift in Sources */,
+				84E399D31C6F8DFD0034EAC0 /* String+FKString.swift in Sources */,
+				84E399D61C6F8DFD0034EAC0 /* Device.swift in Sources */,
 				8418CDD21C6D3C05006AB236 /* DefaultCell.swift in Sources */,
-				B7437D761C6E4AFF009C8F6E /* Lembrete.swift in Sources */,
+				84E399FC1C70216D0034EAC0 /* CalendarCell.swift in Sources */,
+				84E399FA1C7010460034EAC0 /* RealmManager.swift in Sources */,
+				844553FA1C6F540F006557A5 /* Lembrete.swift in Sources */,
 				8418CDB91C6D38A2006AB236 /* AppDelegate.swift in Sources */,
-				8418CDCE1C6D3973006AB236 /* TableViewController.swift in Sources */,
+				84E399DA1C6F8DFD0034EAC0 /* Localizable.swift in Sources */,
+				8418CDCE1C6D3973006AB236 /* MainTableViewController.swift in Sources */,
+				84E399DB1C6F8DFD0034EAC0 /* Screen.swift in Sources */,
 				8418CDD61C6D40DE006AB236 /* Categoria.swift in Sources */,
+				84E399D51C6F8DFD0034EAC0 /* UIColor+HexRGB.swift in Sources */,
+				84E399E11C70098C0034EAC0 /* AddButton.swift in Sources */,
+				84E399DF1C6FA56D0034EAC0 /* CategoryCell.swift in Sources */,
+				84E399B01C6F67C70034EAC0 /* MenuViewController.swift in Sources */,
+				84E399DC1C6F8DFD0034EAC0 /* Style.swift in Sources */,
+				84E399D21C6F8DFD0034EAC0 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +444,15 @@
 			);
 			name = LaunchScreen.storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		84E399C91C6F8DFD0034EAC0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E399CA1C6F8DFD0034EAC0 /* en */,
+				84E399CC1C6F8DFD0034EAC0 /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,11 +547,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/Realm",
+				);
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.moris.DietaDosPontos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.dietadospontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DietaDosPontos/App-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -320,11 +568,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/Realm",
+				);
 				INFOPLIST_FILE = DietaDosPontos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.moris.DietaDosPontos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.dietadospontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DietaDosPontos/App-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

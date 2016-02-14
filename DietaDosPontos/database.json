@@ -29,47 +29,47 @@
 			"tipo": "Chicken Mc Nuggets",
 			"quantidade": "6 pedaços",
 			"pontos": 75
-        }, {
-            "tipo": "Chicken Mc Nuggets",
-            "quantidade": "9 pedaços",
-            "pontos": 115
-        }, {
-            "tipo": "Cheeseburger",
-            "quantidade": "1 unidade",
-            "pontos": 87
-        }, {
-            "tipo": "Hamburguer",
-            "quantidade": "1 unidade",
-            "pontos": 72
-        }, {
-            "tipo": "Mc Chicken",
-            "quantidade": "1 unidade",
-            "pontos": 137
-        }, {
-            "tipo": "Mc Fish",
-            "quantidade": "1 unidade",
-            "pontos": 125
-        }, {
-            "tipo": "Misto Quente",
-            "quantidade": "1 unidade",
-            "pontos": 90
-        }, {
-            "tipo": "Molho Para Nuggets",
-            "quantidade": "1 unidade",
-            "pontos": 15
-        }, {
-            "tipo": "Quarteirão",
-            "quantidade": "1 unidade",
-            "pontos": 115
-        }, {
-            "tipo": "Quarteirão com Queijo",
-            "quantidade": "1 unidade",
-            "pontos": 145
-        }, {
-            "tipo": "Torta de maçã",
-            "quantidade": "1 unidade",
-            "pontos": 72
-        }]
+		}, {
+			"tipo": "Chicken Mc Nuggets",
+			"quantidade": "9 pedaços",
+			"pontos": 115
+		}, {
+			"tipo": "Cheeseburger",
+			"quantidade": "1 unidade",
+			"pontos": 87
+		}, {
+			"tipo": "Hamburguer",
+			"quantidade": "1 unidade",
+			"pontos": 72
+		}, {
+			"tipo": "Mc Chicken",
+			"quantidade": "1 unidade",
+			"pontos": 137
+		}, {
+			"tipo": "Mc Fish",
+			"quantidade": "1 unidade",
+			"pontos": 125
+		}, {
+			"tipo": "Misto Quente",
+			"quantidade": "1 unidade",
+			"pontos": 90
+		}, {
+			"tipo": "Molho Para Nuggets",
+			"quantidade": "1 unidade",
+			"pontos": 15
+		}, {
+			"tipo": "Quarteirão",
+			"quantidade": "1 unidade",
+			"pontos": 115
+		}, {
+			"tipo": "Quarteirão com Queijo",
+			"quantidade": "1 unidade",
+			"pontos": 145
+		}, {
+			"tipo": "Torta de maçã",
+			"quantidade": "1 unidade",
+			"pontos": 72
+		}]
 	}, {
 		"nome": "Doces (1)",
 		"itens": [{
@@ -101,215 +101,761 @@
 			"quantidade": "1 colher de sopa",
 			"pontos": 12
 		}, {
-            "tipo": "Groselha",
-            "quantidade": "1 colher de sopa",
-            "pontos": 14
-        }, {
-            "tipo": "Mel",
-            "quantidade": "1 colher de sopa",
-            "pontos": 17
-        }, {
-            "tipo": "Sagu",
-            "quantidade": "2 colheres de sopa",
-            "pontos": 13
-        }, {
-            "tipo": "Sorvete de Frutas",
-            "quantidade": "1 picolé",
-            "pontos": 18
-        }, {
-            "tipo": "Suspiro",
-            "quantidade": "50 gramas",
-            "pontos": 53
-        }]
-	},{
-        "nome": "Doces (2)"
-        "itens": [{
-            "tipo": "Achocolatado",
-            "quantidade": "1 colher de sopa",
-            "pontos": 25
-        }, {
-            "tipo": "Alfajor",
-            "quantidade": "1 unidade",
-            "pontos": 90
-        }, {
-            "tipo": "Arroz doce",
-            "quantidade": "2 colheres de sopa",
-            "pontos": 35
-        }, {
-            "tipo": "Bis, deditos",
-            "quantidade": "2 unidade",
-            "pontos": 35
-        }, {
-            "tipo": "Biscoito doce",
-            "quantidade": "1 unidade",
-            "pontos": 30
-        }, {
-            "tipo": "Bolacha Maria/Maizena",
-            "quantidade": "3 unidade",
-            "pontos": 25
-        }, {
-            "tipo": "Bolo comum",
-            "quantidade": "1 fatia",
-            "pontos": 50
-        }, {
-            "tipo": "Bomba creme",
-            "quantidade": "1 unidade",
-            "pontos": 140
-        }, {
-            "tipo": "Bombom",
-            "quantidade": "1 unidade",
-            "pontos": 55
-        }, {
-            "tipo": "Brigadeiro",
-            "quantidade": "1 unidade",
-            "pontos": 30
-        }, {
-            "tipo": "Canjica",
-            "quantidade": "2 colheres de sopa",
-            "pontos": 45
-        }, {
-            "tipo": "Chocolate",
-            "quantidade": "1 unidade",
-            "pontos": 170
-        }, {
-            "tipo": "Coberturas",
-            "quantidade": "1 colher de sopa",
-            "pontos": 25
-        }, {
-            "tipo": "Cocada",
-            "quantidade": "1 unidade",
-            "pontos": 80
-        }, {
-            "tipo": "Danone",
-            "quantidade": "1 unidade",
-            "pontos": 70
-        }, {
-            "tipo": "Danoninho",
-            "quantidade": "1 unidade",
-            "pontos": 25
-        }, {
-            "tipo": "Doce de leite",
-            "quantidade": "2 colheres de sopa",
-            "pontos": 35
-        }, {
-            "tipo": "Fibrax",
-            "quantidade": "1 pacote",
-            "pontos": 45
-        }, {
-            "tipo": "Fios de ovos",
-            "quantidade": "1 porção",
-            "pontos": 80
-        }, {
-            "tipo": "Leite condensado",
-            "quantidade": "3 colheres de sopa",
-            "pontos": 60
-        }, {
-            "tipo": "Maria Mole",
-            "quantidade": "1 unidade",
-            "pontos": 70
-        }, {
-            "tipo": "Merengue",
-            "quantidade": "1 unidade",
-            "pontos": 80
-        }, {
-            "tipo": "Mousse",
-            "quantidade": "1 taça",
-            "pontos": 55
-        }, {
-            "tipo": "Paçoca",
-            "quantidade": "1 unidade",
-            "pontos": 45
-        }, {
-            "tipo": "Panetone",
-            "quantidade": "1 fatia fina",
-            "pontos": 35
-        }, {
-            "tipo": "Pé-de-moleque",
-            "quantidade": "1 unidade",
-            "pontos": 60
-        }, {
-            "tipo": "Quindim",
-            "quantidade": "1 porção",
-            "pontos": 90
-        }, {
-            "tipo": "Sonho",
-            "quantidade": "1 unidade",
-            "pontos": 140
-        }, {
-            "tipo": "Sorvete com leite",
-            "quantidade": "1 bola",
-            "pontos": 60
-        }, {
-            "tipo": "Sorvete com leite",
-            "quantidade": "1 picolé",
-            "pontos": 60
-        }, {
-            "tipo": "Toddinho",
-            "quantidade": "1 unidade",
-            "pontos": 50
-        }, {
-            "tipo": "Torta e pudim",
-            "quantidade": "1 fatia média",
-            "pontos": 75
-        }, {
-            "tipo": "Yakult",
-            "quantidade": "1 unidade",
-            "pontos": 45
-        }
-        ]
-    },{
-        "nome": "Diet e light""
-        "itens": [{
-            "tipo": "Bala diet",
-            "quantidade": "1 unidade",
-            "pontos": 2
-        }, {
-            "tipo": "Capucciono diet",
-            "quantidade": "1 colher de chá",
-            "pontos": 5
-        }, {
-            "tipo": "Chocolate em pó diet",
-            "quantidade": "1 colher de chá",
-            "pontos": 10
-        }, {
-            "tipo": "Gelatina Diet",
-            "quantidade": "1 taça",
-            "pontos": 5
-        }, {
-            "tipo": "Geléia diet",
-            "quantidade": "1 colher de chá",
-            "pontos": 3
-        }, {
-            "tipo": "Iogurt diet",
-            "quantidade": "1 porção",
-            "pontos": 18
-        }, {
-            "tipo": "Hellmans light",
-            "quantidade": "1 colher de sopa",
-            "pontos": 20
-        }, {
-            "tipo": "Pudim diet",
-            "quantidade": "1 porção",
-            "pontos": 20
-        }, {
-            "tipo": "Queijo Danúbio diet",
-            "quantidade": "1 fatia grande",
-            "pontos": 20
-        }, {
-            "tipo": "Refresco diet",
-            "quantidade": "1 copo",
-            "pontos": 5
-        }, {
-            "tipo": "Sorvete de frutas diet",
-            "quantidade": "1 picolé",
-            "pontos": 12
-        }, {
-            "tipo": "Sorvete com leite diet",
-            "quantidade": "1 porção",
-            "pontos": 37
-        }]
-    }]
-            
-        
-    
+			"tipo": "Groselha",
+			"quantidade": "1 colher de sopa",
+			"pontos": 14
+		}, {
+			"tipo": "Mel",
+			"quantidade": "1 colher de sopa",
+			"pontos": 17
+		}, {
+			"tipo": "Sagu",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 13
+		}, {
+			"tipo": "Sorvete de Frutas",
+			"quantidade": "1 picolé",
+			"pontos": 18
+		}, {
+			"tipo": "Suspiro",
+			"quantidade": "50 gramas",
+			"pontos": 53
+		}]
+	}, {
+		"nome": "Doces (2)",
+		"itens": [{
+			"tipo": "Achocolatado",
+			"quantidade": "1 colher de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Alfajor",
+			"quantidade": "1 unidade",
+			"pontos": 90
+		}, {
+			"tipo": "Arroz doce",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 35
+		}, {
+			"tipo": "Bis, deditos",
+			"quantidade": "2 unidade",
+			"pontos": 35
+		}, {
+			"tipo": "Biscoito doce",
+			"quantidade": "1 unidade",
+			"pontos": 30
+		}, {
+			"tipo": "Bolacha Maria/Maizena",
+			"quantidade": "3 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Bolo comum",
+			"quantidade": "1 fatia",
+			"pontos": 50
+		}, {
+			"tipo": "Bomba creme",
+			"quantidade": "1 unidade",
+			"pontos": 140
+		}, {
+			"tipo": "Bombom",
+			"quantidade": "1 unidade",
+			"pontos": 55
+		}, {
+			"tipo": "Brigadeiro",
+			"quantidade": "1 unidade",
+			"pontos": 30
+		}, {
+			"tipo": "Canjica",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 45
+		}, {
+			"tipo": "Chocolate",
+			"quantidade": "1 unidade",
+			"pontos": 170
+		}, {
+			"tipo": "Coberturas",
+			"quantidade": "1 colher de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Cocada",
+			"quantidade": "1 unidade",
+			"pontos": 80
+		}, {
+			"tipo": "Danone",
+			"quantidade": "1 unidade",
+			"pontos": 70
+		}, {
+			"tipo": "Danoninho",
+			"quantidade": "1 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Doce de leite",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 35
+		}, {
+			"tipo": "Fibrax",
+			"quantidade": "1 pacote",
+			"pontos": 45
+		}, {
+			"tipo": "Fios de ovos",
+			"quantidade": "1 porção",
+			"pontos": 80
+		}, {
+			"tipo": "Leite condensado",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 60
+		}, {
+			"tipo": "Maria Mole",
+			"quantidade": "1 unidade",
+			"pontos": 70
+		}, {
+			"tipo": "Merengue",
+			"quantidade": "1 unidade",
+			"pontos": 80
+		}, {
+			"tipo": "Mousse",
+			"quantidade": "1 taça",
+			"pontos": 55
+		}, {
+			"tipo": "Paçoca",
+			"quantidade": "1 unidade",
+			"pontos": 45
+		}, {
+			"tipo": "Panetone",
+			"quantidade": "1 fatia fina",
+			"pontos": 35
+		}, {
+			"tipo": "Pé-de-moleque",
+			"quantidade": "1 unidade",
+			"pontos": 60
+		}, {
+			"tipo": "Quindim",
+			"quantidade": "1 porção",
+			"pontos": 90
+		}, {
+			"tipo": "Sonho",
+			"quantidade": "1 unidade",
+			"pontos": 140
+		}, {
+			"tipo": "Sorvete com leite",
+			"quantidade": "1 bola",
+			"pontos": 60
+		}, {
+			"tipo": "Sorvete com leite",
+			"quantidade": "1 picolé",
+			"pontos": 60
+		}, {
+			"tipo": "Toddinho",
+			"quantidade": "1 unidade",
+			"pontos": 50
+		}, {
+			"tipo": "Torta e pudim",
+			"quantidade": "1 fatia média",
+			"pontos": 75
+		}, {
+			"tipo": "Yakult",
+			"quantidade": "1 unidade",
+			"pontos": 45
+		}]
+	}, {
+		"nome": "Diet e light",
+		"itens": [{
+			"tipo": "Bala diet",
+			"quantidade": "1 unidade",
+			"pontos": 2
+		}, {
+			"tipo": "Capucciono diet",
+			"quantidade": "1 colher de chá",
+			"pontos": 5
+		}, {
+			"tipo": "Chocolate em pó diet",
+			"quantidade": "1 colher de chá",
+			"pontos": 10
+		}, {
+			"tipo": "Gelatina Diet",
+			"quantidade": "1 taça",
+			"pontos": 5
+		}, {
+			"tipo": "Geléia diet",
+			"quantidade": "1 colher de chá",
+			"pontos": 3
+		}, {
+			"tipo": "Iogurt diet",
+			"quantidade": "1 porção",
+			"pontos": 18
+		}, {
+			"tipo": "Hellmans light",
+			"quantidade": "1 colher de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Pudim diet",
+			"quantidade": "1 porção",
+			"pontos": 20
+		}, {
+			"tipo": "Queijo Danúbio diet",
+			"quantidade": "1 fatia grande",
+			"pontos": 20
+		}, {
+			"tipo": "Refresco diet",
+			"quantidade": "1 copo",
+			"pontos": 5
+		}, {
+			"tipo": "Sorvete de frutas diet",
+			"quantidade": "1 picolé",
+			"pontos": 12
+		}, {
+			"tipo": "Sorvete com leite diet",
+			"quantidade": "1 porção",
+			"pontos": 37
+		}]
+	}, {
+		"nome": "Bebidas",
+		"itens": [{
+			"tipo": "Água de coco",
+			"quantidade": "1 copo",
+			"pontos": 10
+		}, {
+			"tipo": "Batidas",
+			"quantidade": "1/2 copo",
+			"pontos": 70
+		}, {
+			"tipo": "Caldo de cana",
+			"quantidade": "1 copo",
+			"pontos": 45
+		}, {
+			"tipo": "Cerveja ou Chopp",
+			"quantidade": "1 copo",
+			"pontos": 24
+		}, {
+			"tipo": "Gatorate",
+			"quantidade": "1 copo",
+			"pontos": 15
+		}, {
+			"tipo": "Licor",
+			"quantidade": "1 copo",
+			"pontos": 95
+		}, {
+			"tipo": "Marathon",
+			"quantidade": "1 1/2 copo",
+			"pontos": 25
+		}, {
+			"tipo": "Refrigerantes",
+			"quantidade": "1 copo",
+			"pontos": 22
+		}, {
+			"tipo": "Suco de maçã (Yakult)",
+			"quantidade": "1 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Suco de vegetais (Yakult)",
+			"quantidade": "1 unidade",
+			"pontos": 15
+		}, {
+			"tipo": "Suco de tomate",
+			"quantidade": "1 copo",
+			"pontos": 15
+		}, {
+			"tipo": "Sakê",
+			"quantidade": "1/2 copo",
+			"pontos": 40
+		}, {
+			"tipo": "Taff Man E",
+			"quantidade": "1 frasco",
+			"pontos": 20
+		}, {
+			"tipo": "Tonyo (maçã/maracuja)",
+			"quantidade": "1 unidade",
+			"pontos": 45
+		}, {
+			"tipo": "Vinho/vermute",
+			"quantidade": "1 copo",
+			"pontos": 50
+		}, {
+			"tipo": "Whisky/gin/vodka",
+			"quantidade": "1 dose (50ml)",
+			"pontos": 40
+		}]
+	}, {
+		"nome": "Temperos",
+		"itens": [{
+			"tipo": "Catchup",
+			"quantidade": "1 colher de sopa",
+			"pontos": 10
+		}, {
+			"tipo": "Maionese",
+			"quantidade": "1 colher de sopa",
+			"pontos": 40
+		}, {
+			"tipo": "Molho a Bolonhesa",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 50
+		}, {
+			"tipo": "Molho Branco",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 50
+		}, {
+			"tipo": "Molho de Gergelim",
+			"quantidade": "1 colher de sopa",
+			"pontos": 75
+		}, {
+			"tipo": "Molho Inglês/Mostarda",
+			"quantidade": "4 colheres de sopa",
+			"pontos": 30
+		}, {
+			"tipo": "Molho de soja",
+			"quantidade": "4 colheres de sopa",
+			"pontos": 25
+		}]
+	}, {
+		"nome": "Sopas",
+		"itens": [{
+			"tipo": "Caldo de carne com vegetal",
+			"quantidade": "1 concha",
+			"pontos": 10
+		}, {
+			"tipo": "Caldo de galinha",
+			"quantidade": "1 concha",
+			"pontos": 20
+		}, {
+			"tipo": "Canja sem pele",
+			"quantidade": "1 concha",
+			"pontos": 30
+		}, {
+			"tipo": "Consomé de carne",
+			"quantidade": "1 concha",
+			"pontos": 5
+		}, {
+			"tipo": "Creme de aspargo",
+			"quantidade": "1 concha",
+			"pontos": 30
+		}, {
+			"tipo": "Creme de cebola",
+			"quantidade": "2 conchas",
+			"pontos": 30
+		}, {
+			"tipo": "Creme de cogumelo",
+			"quantidade": "1 concha",
+			"pontos": 30
+		}, {
+			"tipo": "Creme de ervilha",
+			"quantidade": "1 concha",
+			"pontos": 35
+		}, {
+			"tipo": "Sopa de feijão branco",
+			"quantidade": "1 concha",
+			"pontos": 35
+		}, {
+			"tipo": "Sopa de vegetais",
+			"quantidade": "1 concha",
+			"pontos": 35
+		}]
+	}, {
+		"nome": "Outros",
+		"itens": [{
+			"tipo": "Amêndoas",
+			"quantidade": "1 unidade",
+			"pontos": 10
+		}, {
+			"tipo": "Amendoin",
+			"quantidade": "50 gramas",
+			"pontos": 85
+		}, {
+			"tipo": "Azeitona",
+			"quantidade": "1 unidade",
+			"pontos": 5
+		}, {
+			"tipo": "Baconzitos",
+			"quantidade": "10 unidades",
+			"pontos": 42
+		}, {
+			"tipo": "Batata Chips",
+			"quantidade": "80 gramas",
+			"pontos": 65
+		}, {
+			"tipo": "Bife à Parmegiana",
+			"quantidade": "1 porção",
+			"pontos": 135
+		}, {
+			"tipo": "Biscoito de Polvilho",
+			"quantidade": "50 gramas",
+			"pontos": 60
+		}, {
+			"tipo": "Camarrão com catupiry",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 50
+		}, {
+			"tipo": "Castanha de caju",
+			"quantidade": "50 gramas",
+			"pontos": 85
+		}, {
+			"tipo": "Caviar",
+			"quantidade": "4 colheres de sopa",
+			"pontos": 95
+		}, {
+			"tipo": "Cebolinha em conserva",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 65
+		}, {
+			"tipo": "Coco ralado industrial",
+			"quantidade": "50 gramas",
+			"pontos": 10
+		}, {
+			"tipo": "Coxinha/Pastel",
+			"quantidade": "1 unidade",
+			"pontos": 95
+		}, {
+			"tipo": "Croissant",
+			"quantidade": "1 unidade",
+			"pontos": 40
+		}, {
+			"tipo": "Croquete, quibe, esfiha",
+			"quantidade": "1 unidade",
+			"pontos": 50
+		}, {
+			"tipo": "Folhado, canapé, empada",
+			"quantidade": "1 unidade",
+			"pontos": 40
+		}, {
+			"tipo": "Feijoada",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Fondue de queijo",
+			"quantidade": "1/2 xícara de chá",
+			"pontos": 75
+		}, {
+			"tipo": "Kaak(biscoito sírio)",
+			"quantidade": "1 unidade",
+			"pontos": 20
+		}, {
+			"tipo": "Kafta",
+			"quantidade": "1 espetinho",
+			"pontos": 60
+		}, {
+			"tipo": "Lasanha",
+			"quantidade": "1 fatia média",
+			"pontos": 170
+		}, {
+			"tipo": "Leite de coco",
+			"quantidade": "1/2 copo",
+			"pontos": 70
+		}, {
+			"tipo": "Niguirisushi",
+			"quantidade": "1 unidade",
+			"pontos": 55
+		}, {
+			"tipo": "Nozes",
+			"quantidade": "50 gramas",
+			"pontos": 95
+		}, {
+			"tipo": "Pamonha",
+			"quantidade": "1 porção",
+			"pontos": 70
+		}, {
+			"tipo": "Panqueca",
+			"quantidade": "1 porção",
+			"pontos": 70
+		}, {
+			"tipo": "Patê de beringela",
+			"quantidade": "1 colher de chá",
+			"pontos": 10
+		}, {
+			"tipo": "Patê fígado, peixe, lingua",
+			"quantidade": "1 colher de chá",
+			"pontos": 15
+		}, {
+			"tipo": "Patê galinha",
+			"quantidade": "1 colher de chá",
+			"pontos": 10
+		}, {
+			"tipo": "Pinhão cozido",
+			"quantidade": "100 gramas",
+			"pontos": 85
+		}, {
+			"tipo": "Pipoca",
+			"quantidade": "50 gramas",
+			"pontos": 65
+		}, {
+			"tipo": "Pistache",
+			"quantidade": "50 gramas",
+			"pontos": 90
+		}, {
+			"tipo": "Pizza",
+			"quantidade": "1 fatia fina",
+			"pontos": 70
+		}, {
+			"tipo": "Salada de maionese",
+			"quantidade": "1 colher de sopa",
+			"pontos": 55
+		}, {
+			"tipo": "Sashimi",
+			"quantidade": "100 gramas",
+			"pontos": 25
+		}, {
+			"tipo": "Semente de abóbora",
+			"quantidade": "50 gramas",
+			"pontos": 80
+		}, {
+			"tipo": "Strogonoff",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 55
+		}, {
+			"tipo": "Suflê de legumes",
+			"quantidade": "1 porção",
+			"pontos": 40
+		}, {
+			"tipo": "Suflê de queijo",
+			"quantidade": "1 porção",
+			"pontos": 60
+		}, {
+			"tipo": "Sushi",
+			"quantidade": "1 unidade",
+			"pontos": 15
+		}, {
+			"tipo": "Tabule sem azeite",
+			"quantidade": "3 colheres de sopa",
+			"pontos": 20
+		}, {
+			"tipo": "Tahine",
+			"quantidade": "1 colher de chá",
+			"pontos": 15
+		}, {
+			"tipo": "Tâmara",
+			"quantidade": "100 gramas",
+			"pontos": 90
+		}, {
+			"tipo": "Tapioca",
+			"quantidade": "1 porção",
+			"pontos": 90
+		}, {
+			"tipo": "Torresmo",
+			"quantidade": "1 colher de sopa",
+			"pontos": 30
+		}, {
+			"tipo": "Torta salgada",
+			"quantidade": "1 pedaço",
+			"pontos": 50
+		}, {
+			"tipo": "Tremoço cozido",
+			"quantidade": "100 gramas",
+			"pontos": 115
+		}, {
+			"tipo": "Vereniks",
+			"quantidade": "1 unidade",
+			"pontos": 30
+		}, {
+			"tipo": "Vatapá",
+			"quantidade": "1 porção",
+			"pontos": 35
+		}]
+	}, {
+		"nome": "Grupo (3)",
+		"itens": [{
+			"tipo": "Almôndega",
+			"quantidade": "1 unidade pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Arenque defumado",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Atum em conserva",
+			"quantidade": "1 colher de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Aves (sem pele)",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Bacalhau",
+			"quantidade": "1 pires de café",
+			"pontos": 25
+		}, {
+			"tipo": "Camarão",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}, {
+			"tipo": "Camarão seco",
+			"quantidade": "1 colher de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Caranguejo",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}, {
+			"tipo": "Carne de cabrito",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Carne de porco",
+			"quantidade": "1/2 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Carne seca",
+			"quantidade": "1 colher de sopa",
+			"pontos": 25
+		}, {
+			"tipo": "Carne de vaca gorda",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Carne de vaca magra",
+			"quantidade": "1 porção média",
+			"pontos": 25
+		}, {
+			"tipo": "Carne de soja",
+			"quantidade": "1 porção média",
+			"pontos": 25
+		}, {
+			"tipo": "Clara de ovo",
+			"quantidade": "6 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Coelho",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Cordeiro",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Fígado de boi",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Hamburguer",
+			"quantidade": "1 unidade pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Lagosta",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Lingua",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
+		}, {
+			"tipo": "Linguiça",
+			"quantidade": "1 unidade pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Lombo defumado",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Lula",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}, {
+			"tipo": "Marisco",
+			"quantidade": "1 porção",
+			"pontos": 25
+		}, {
+			"tipo": "Miolo",
+			"quantidade": "1 porção",
+			"pontos": 25
+		}, {
+			"tipo": "Miudos",
+			"quantidade": "1 porção",
+			"pontos": 25
+		}, {
+			"tipo": "Ostras, mexilhões",
+			"quantidade": "5 médias",
+			"pontos": 25
+		}, {
+			"tipo": "Ovo",
+			"quantidade": "1 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Ovo de codorna",
+			"quantidade": "4 unidades",
+			"pontos": 25
+		}, {
+			"tipo": "Peito de peru defumado",
+			"quantidade": "2 fatias finas",
+			"pontos": 25
+		}, {
+			"tipo": "Peixe fresco",
+			"quantidade": "1 porção média",
+			"pontos": 25
+		}, {
+			"tipo": "Peixe salgado ou hadock",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Polvo",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}, {
+			"tipo": "Presunto ou frios",
+			"quantidade": "1 fatia fina",
+			"pontos": 25
+		}, {
+			"tipo": "Quibe assado",
+			"quantidade": "1 fatia média",
+			"pontos": 25
+		}, {
+			"tipo": "Quibe cru",
+			"quantidade": "1 porção média",
+			"pontos": 25
+		}, {
+			"tipo": "Rã",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}, {
+			"tipo": "Rosbife",
+			"quantidade": "2 fatias",
+			"pontos": 25
+		}, {
+			"tipo": "Salmão defumado",
+			"quantidade": "1 porção pequena",
+			"pontos": 25
+		}, {
+			"tipo": "Salsicha",
+			"quantidade": "1 unidade média",
+			"pontos": 25
+		}, {
+			"tipo": "Sardinha fresca",
+			"quantidade": "5 unidades",
+			"pontos": 25
+		}, {
+			"tipo": "Sardinha em óleo",
+			"quantidade": "1 unidade",
+			"pontos": 25
+		}, {
+			"tipo": "Sardinha em tomate",
+			"quantidade": "3 unidades",
+			"pontos": 25
+		}, {
+			"tipo": "Vieira",
+			"quantidade": "1 pires de chá",
+			"pontos": 25
+		}]
+	}, {
+		"nome": "Grupo (4)",
+		"itens": [{
+			"tipo": "Coalhada seca",
+			"quantidade": "2 colheres de sopa",
+			"pontos": 15
+		}, {
+			"tipo": "Iogurte",
+			"quantidade": "1 copo grnade",
+			"pontos": 15
+		}, {
+			"tipo": "Leite vaca integral",
+			"quantidade": "1 copo grande",
+			"pontos": 15
+		}, {
+			"tipo": "Leite integral em pó",
+			"quantidade": "1 1/2 colher de sopa",
+			"pontos": 15
+		}, {
+			"tipo": "Leite/iogurte desnatado",
+			"quantidade": "2 copos",
+			"pontos": 15
+		}, {
+			"tipo": "Leite de soja",
+			"quantidade": "1/2 copo (100ml)",
+			"pontos": 15
+		}]
+	}]
 }

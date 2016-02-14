@@ -11,6 +11,7 @@ import UIKit
 
 class HeaderView:UIView {
     @IBOutlet weak var categoria: UILabel!
+    @IBOutlet weak var total: UILabel!
     
     static func loadFromNib()-> HeaderView {
         let nibName = "\(self)".characters.split{$0 == "."}.map(String.init).last!

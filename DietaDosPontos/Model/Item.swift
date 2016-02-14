@@ -9,6 +9,8 @@
 import Foundation
 
 class Item {
+    var identifier:String!
+    var itemID:String!
     var tipo:String!
     var quantidade:String
     var pontos:Int!

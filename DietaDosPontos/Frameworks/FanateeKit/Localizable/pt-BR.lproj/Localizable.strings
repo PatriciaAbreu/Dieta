@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  BasicSDK
+
+  Created by Rafael Moris on 23/07/15.
+  Copyright (c) 2015 Interacton. All rights reserved.
+*/
+
+
+"Fechar" = "Fechar";
+
+"Choose your opponent" = "Escolha seu oponente";
+
+"Coming soon" = "Em breve";
+
+"How to play" = "Como jogar";
+
+"Click to play" = "Clique para jogar";
+
+"Matches played" = "Partidas jogadas";
+
+"Matches won" = "Partidas vencidas";
+
+"number of victories" = "%@ de vitórias";
+
+"You" = "Você";
+
+"Opponent" = "Oponente";
+
+"You win this round" = "Você acertou";
+
+"You tied this round" = "Empatou";
+
+"You lose this round" = "%@ acertou";
+
+"Flick up to choose" = "Deslize para cima para digitar";
+
+"Flick down to choose" = "Deslize para baixo para digitar";
+
+"Flick right to choose" = "Deslize para a direita para digitar";
+
+"Flick left to choose" = "Deslize para a esquerda para digitar";
+
+"Click once to delete the last letter" = "Click uma vez para apagar a última letra";
+
+"Click twice to delete all letters" = "Click duas vezes para apagar todas as letras";

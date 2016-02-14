@@ -3,50 +3,141 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tabela de Correlações Energéticas-->
         <scene sceneID="ZlO-y9-FzD">
             <objects>
-                <tableViewController id="5TV-37-eFG" customClass="TableViewController" customModule="DietaDosPontos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5TV-37-eFG" customClass="MainTableViewController" customModule="DietaDosPontos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fyj-7o-Aqj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" rowHeight="44" id="sh4-0w-BRM" customClass="DefaultCell" customModule="DietaDosPontos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" rowHeight="50" id="faD-QQ-q50" customClass="DefaultCell" customModule="DietaDosPontos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="faD-QQ-q50" id="9Rg-iA-nlx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-pE-9PO">
+                                            <rect key="frame" x="20" y="5" width="340" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adO-a8-pQE">
+                                            <rect key="frame" x="20" y="25" width="150" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-cT-zqg" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
+                                            <rect key="frame" x="551" y="2" width="50" height="50"/>
+                                            <state key="normal" image="btn_add"/>
+                                            <state key="highlighted" image="btn_add_highlighted"/>
+                                            <connections>
+                                                <action selector="adicionarPontos:" destination="faD-QQ-q50" eventType="touchUpInside" id="8gt-Ky-T5j"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pontos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snL-FV-P38">
+                                            <rect key="frame" x="468" y="2" width="90" height="50"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PA9-cT-zqg" secondAttribute="trailing" constant="5" id="1Zz-Jg-Sfn"/>
+                                        <constraint firstItem="PA9-cT-zqg" firstAttribute="leading" secondItem="snL-FV-P38" secondAttribute="trailing" constant="10" id="3Yc-Yf-Ecb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="btnAdicionar" destination="PA9-cT-zqg" id="mfs-aP-M48"/>
+                                    <outlet property="lblPontos" destination="snL-FV-P38" id="FAe-0J-jfW"/>
+                                    <outlet property="lblQuantidade" destination="adO-a8-pQE" id="4ZJ-tC-NbX"/>
+                                    <outlet property="lblTipo" destination="WXG-pE-9PO" id="exu-Kx-w8Q"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RemoveCell" rowHeight="50" id="sh4-0w-BRM" customClass="RemoveCell" customModule="DietaDosPontos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="142" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sh4-0w-BRM" id="Y4P-zg-nN9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b9-6q-WQK">
+                                            <rect key="frame" x="20" y="5" width="340" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-tG-7LT">
+                                            <rect key="frame" x="20" y="25" width="150" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-lt-dCX" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
+                                            <rect key="frame" x="550" y="2" width="50" height="50"/>
+                                            <color key="tintColor" red="0.88235294119999996" green="0.2274509804" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" image="btn_remove"/>
+                                            <state key="highlighted" image="btn_remove_highlighted"/>
+                                            <connections>
+                                                <action selector="removerPontos:" destination="sh4-0w-BRM" eventType="touchUpInside" id="y9U-hg-V4A"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pontos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-Nj-DKR">
+                                            <rect key="frame" x="468" y="2" width="90" height="50"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1dW-lt-dCX" secondAttribute="trailing" constant="5" id="Mqv-Xb-ROi"/>
+                                        <constraint firstItem="1dW-lt-dCX" firstAttribute="leading" secondItem="wJR-Nj-DKR" secondAttribute="trailing" constant="10" id="VTc-lS-nnK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="btnRemover" destination="1dW-lt-dCX" id="Sq7-4R-f8w"/>
+                                    <outlet property="lblPontos" destination="wJR-Nj-DKR" id="Pis-CZ-Afy"/>
+                                    <outlet property="lblQuantidade" destination="1L5-tG-7LT" id="esf-hh-7nc"/>
+                                    <outlet property="lblTipo" destination="9b9-6q-WQK" id="NHi-19-f8Q"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="BCQ-7a-PjX" customClass="CategoryCell" customModule="DietaDosPontos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="192" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BCQ-7a-PjX" id="EEk-kS-pD6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2Y-q7-I6A">
-                                            <rect key="frame" x="8" y="7" width="150" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-pO-JMp">
-                                            <rect key="frame" x="166" y="7" width="150" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-Jd-vBt">
-                                            <rect key="frame" x="324" y="7" width="90" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBI-Ce-ds3">
-                                            <rect key="frame" x="8" y="41" width="600" height="1"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE8-gn-bjR">
+                                            <rect key="frame" x="15" y="11" width="223" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="lblPontos" destination="Dwb-Jd-vBt" id="hFM-PH-e64"/>
-                                    <outlet property="lblQuantidade" destination="FuG-pO-JMp" id="JFP-5r-BhR"/>
-                                    <outlet property="lblTipo" destination="C2Y-q7-I6A" id="i4F-Ad-tJ3"/>
-                                    <outlet property="line" destination="cBI-Ce-ds3" id="IOd-Be-nn9"/>
+                                    <outlet property="lblCategoria" destination="JE8-gn-bjR" id="cDE-s1-nFN"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalendarCell" id="2PO-Li-mw7" customClass="CalendarCell" customModule="DietaDosPontos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="236" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2PO-Li-mw7" id="hQ8-Zn-F8s">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvD-Hv-V8S" userLabel="Lbl Data">
+                                            <rect key="frame" x="15" y="11" width="223" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblData" destination="WvD-Hv-V8S" id="zKL-Tc-RUQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,11 +147,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tabela de Correlações Energéticas" id="FDm-Py-i1k">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Tme-p9-hTo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cqB-gd-VbH">
+                                <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_calendar"/>
+                                <connections>
+                                    <action selector="mostrarCalendario:" destination="5TV-37-eFG" eventType="touchUpInside" id="UXq-hW-I0j"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="9Z6-qj-rK4">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wsW-uE-zee">
-                                <rect key="frame" x="490" y="11" width="90" height="22"/>
+                                <rect key="frame" x="556" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Categorias"/>
+                                <state key="normal" image="btn_menu"/>
+                                <connections>
+                                    <action selector="mostrarCategoria:" destination="5TV-37-eFG" eventType="touchUpInside" id="m1w-9I-5ER"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -85,5 +189,30 @@
             </objects>
             <point key="canvasLocation" x="-287" y="-133"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="e4O-B9-hZ0">
+            <objects>
+                <viewController id="ocA-HC-Pz7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kct-xF-5Il"/>
+                        <viewControllerLayoutGuide type="bottom" id="uS1-Jq-ZaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fwz-bm-YIc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfN-jh-SLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
+    <resources>
+        <image name="btn_add" width="24" height="24"/>
+        <image name="btn_add_highlighted" width="32" height="32"/>
+        <image name="btn_calendar" width="24" height="24"/>
+        <image name="btn_menu" width="24" height="24"/>
+        <image name="btn_remove" width="24" height="24"/>
+        <image name="btn_remove_highlighted" width="32" height="32"/>
+    </resources>
 </document>
