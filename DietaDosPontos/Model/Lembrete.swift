@@ -27,15 +27,15 @@ class Lembrete {
                 
                 switch hora {
                 case 7:
-                    lembrete.notification.alertBody = "Algo as 6"
+                    lembrete.notification.alertBody = "Comece o dia bem, comece marcando seus pontos!"
                 case 10:
-                    lembrete.notification.alertBody = "Algo as 9"
+                    lembrete.notification.alertBody = "Se resolveu reforçar o café da manhã, marque esses pontos também."
                 case 13:
-                    lembrete.notification.alertBody = "Algo as 12"
+                    lembrete.notification.alertBody = "Hora do almoço, como será que estão seus pontos?"
                 case 16:
-                    lembrete.notification.alertBody = "Algo as 15"
+                    lembrete.notification.alertBody = "Parou para um lanche? Aproveite para marcar seus pontos."
                 case 19:
-                    lembrete.notification.alertBody = "Algo as 18"
+                    lembrete.notification.alertBody = "Chegando o final do dia, hora de ver sua pontuação."
                 default:
                     break;
                 }

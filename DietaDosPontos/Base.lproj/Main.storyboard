@@ -15,25 +15,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" rowHeight="50" id="faD-QQ-q50" customClass="DefaultCell" customModule="DietaDosPontos" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCellPad" rowHeight="50" id="wgf-ze-SaU" userLabel="DefaultCellPad" customClass="DefaultCell" customModule="DietaDosPontos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wgf-ze-SaU" id="OCi-BF-xcD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSn-K0-W51">
+                                            <rect key="frame" x="20" y="4" width="340" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-Nf-gwI">
+                                            <rect key="frame" x="20" y="24" width="150" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QST-GO-0I9" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
+                                            <rect key="frame" x="551" y="-0.5" width="50" height="50"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-3" maxY="0.0"/>
+                                            <state key="normal" image="btn_add"/>
+                                            <connections>
+                                                <action selector="adicionarPontos:" destination="wgf-ze-SaU" eventType="touchUpInside" id="SRr-4H-K76"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="88888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wec-y9-gtI">
+                                            <rect key="frame" x="462" y="-0.5" width="90" height="50"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Wec-y9-gtI" secondAttribute="trailing" constant="53" id="AB7-L8-szP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="QST-GO-0I9" secondAttribute="trailing" id="eB2-N5-Q0j"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="btnAdicionar" destination="QST-GO-0I9" id="JAb-3K-o84"/>
+                                    <outlet property="lblPontos" destination="Wec-y9-gtI" id="CRq-4a-ip1"/>
+                                    <outlet property="lblQuantidade" destination="ngZ-Nf-gwI" id="N4J-0U-dc6"/>
+                                    <outlet property="lblTipo" destination="OSn-K0-W51" id="bPC-pK-Gzx"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" rowHeight="50" id="faD-QQ-q50" customClass="DefaultCell" customModule="DietaDosPontos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="142" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="faD-QQ-q50" id="9Rg-iA-nlx">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-pE-9PO">
-                                            <rect key="frame" x="20" y="5" width="340" height="21"/>
+                                            <rect key="frame" x="20" y="4" width="340" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adO-a8-pQE">
-                                            <rect key="frame" x="20" y="25" width="150" height="21"/>
+                                            <rect key="frame" x="20" y="24" width="150" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-cT-zqg" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
-                                            <rect key="frame" x="551" y="2" width="50" height="50"/>
+                                            <rect key="frame" x="551" y="-0.5" width="50" height="50"/>
                                             <inset key="contentEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <state key="normal" image="btn_add"/>
                                             <connections>
@@ -41,14 +85,14 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pontos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snL-FV-P38">
-                                            <rect key="frame" x="468" y="2" width="90" height="50"/>
+                                            <rect key="frame" x="462" y="-0.5" width="90" height="50"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="PA9-cT-zqg" secondAttribute="trailing" id="1Zz-Jg-Sfn"/>
-                                        <constraint firstItem="PA9-cT-zqg" firstAttribute="leading" secondItem="snL-FV-P38" secondAttribute="trailing" constant="5" id="3Yc-Yf-Ecb"/>
+                                        <constraint firstItem="PA9-cT-zqg" firstAttribute="leading" secondItem="snL-FV-P38" secondAttribute="trailing" priority="750" constant="5" id="3Yc-Yf-Ecb"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -59,51 +103,40 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RemoveCell" rowHeight="50" id="sh4-0w-BRM" customClass="RemoveCell" customModule="DietaDosPontos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="142" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="192" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sh4-0w-BRM" id="Y4P-zg-nN9">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b9-6q-WQK">
-                                            <rect key="frame" x="20" y="5" width="340" height="21"/>
+                                            <rect key="frame" x="20" y="4" width="340" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-tG-7LT">
-                                            <rect key="frame" x="20" y="25" width="150" height="21"/>
+                                            <rect key="frame" x="20" y="24" width="150" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-lt-dCX" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
-                                            <rect key="frame" x="550" y="2" width="50" height="50"/>
-                                            <color key="tintColor" red="0.88235294119999996" green="0.2274509804" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
-                                            <inset key="contentEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
-                                            <state key="normal" image="btn_remove"/>
-                                            <connections>
-                                                <action selector="removerPontos:" destination="sh4-0w-BRM" eventType="touchUpInside" id="y9U-hg-V4A"/>
-                                            </connections>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pontos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-Nj-DKR">
-                                            <rect key="frame" x="468" y="2" width="90" height="50"/>
+                                            <rect key="frame" x="509" y="-0.5" width="90" height="50"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="1dW-lt-dCX" secondAttribute="trailing" id="Mqv-Xb-ROi"/>
-                                        <constraint firstItem="1dW-lt-dCX" firstAttribute="leading" secondItem="wJR-Nj-DKR" secondAttribute="trailing" constant="5" id="VTc-lS-nnK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wJR-Nj-DKR" secondAttribute="trailing" id="jpF-O6-ZAQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="btnRemover" destination="1dW-lt-dCX" id="Sq7-4R-f8w"/>
                                     <outlet property="lblPontos" destination="wJR-Nj-DKR" id="Pis-CZ-Afy"/>
                                     <outlet property="lblQuantidade" destination="1L5-tG-7LT" id="esf-hh-7nc"/>
                                     <outlet property="lblTipo" destination="9b9-6q-WQK" id="NHi-19-f8Q"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="BCQ-7a-PjX" customClass="CategoryCell" customModule="DietaDosPontos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="192" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="242" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BCQ-7a-PjX" id="EEk-kS-pD6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -122,7 +155,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalendarCell" id="2PO-Li-mw7" customClass="CalendarCell" customModule="DietaDosPontos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="236" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="286" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2PO-Li-mw7" id="hQ8-Zn-F8s">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -211,6 +244,5 @@
         <image name="btn_add" width="24" height="24"/>
         <image name="btn_calendar" width="24" height="24"/>
         <image name="btn_menu" width="24" height="24"/>
-        <image name="btn_remove" width="24" height="24"/>
     </resources>
 </document>

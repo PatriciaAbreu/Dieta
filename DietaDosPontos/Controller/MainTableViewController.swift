@@ -151,11 +151,16 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
             let cell = self.tableView.dequeueReusableCellWithIdentifier("RemoveCell") as! RemoveCell
             
             cell.definirValoresBaseadoNoItem(self.dadosFiltrados[indexPath.section][indexPath.row], section: indexPath.section, row: indexPath.row)
-            cell.btnRemover.itemID = self.dadosFiltrados[indexPath.section][indexPath.row].itemID
+            cell.itemID = self.dadosFiltrados[indexPath.section][indexPath.row].itemID
             cell.controller = self
             return cell
         }else {
-            let cell = self.tableView.dequeueReusableCellWithIdentifier("DefaultCell") as! DefaultCell
+            var cell:DefaultCell!
+            if Device.isPad() {
+                cell = self.tableView.dequeueReusableCellWithIdentifier("DefaultCellPad") as! DefaultCell
+            }else {
+                cell = self.tableView.dequeueReusableCellWithIdentifier("DefaultCell") as! DefaultCell
+            }
             
             cell.definirValoresBaseadoNoItem(self.dadosFiltrados[indexPath.section][indexPath.row], section: indexPath.section, row: indexPath.row)
             cell.controller = self
@@ -314,6 +319,61 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                     self.feedbackView.alpha = 0.0
                 }
             }
+        }
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return self.mostrandoHistorico
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            self.apagarRowAtIndexPath(indexPath)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        
+        if self.mostrandoHistorico {
+            return UITableViewCellEditingStyle.Delete
+        }else {
+            return UITableViewCellEditingStyle.Insert
+        }
+    }
+    
+    func apagarRowAtIndexPath(indexPath:NSIndexPath) {
+        var apagarSessao = false
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! RemoveCell
+        
+        let database = RealmManager.sharedInstance()
+        
+        let itens = database.objectsOfType(ItemObject.self, identifier: "itemID", value: cell.itemID)
+        if let item = itens?.first {
+            let identifier = item.identifier
+            database.delete(item)
+            
+            if database.hasObjectOfType(ItemObject.self, withIdentifier:identifier) == false {
+                let historicos = database.objectsOfType(HistoricoObject.self, withIdentifier: identifier)
+                if let historico = historicos?.first {
+                    database.delete(historico)
+                    apagarSessao = true
+                }
+            }
+        }
+        
+        if apagarSessao {
+            self.dadosFiltrados.removeAtIndex(indexPath.section)
+            
+            self.tableView.deleteSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Top)
+        }else {
+            self.dadosFiltrados[indexPath.section].removeAtIndex(indexPath.row)
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
+            
+            delay(0.5, closure: { () -> () in
+                self.reloadDataUpdateTable()
+            })
         }
     }
 }

@@ -12,7 +12,10 @@ import UIKit
 class RemoveCell: UITableViewCell {
     var controller:MainTableViewController!
     
-    @IBOutlet weak var btnRemover: AddButton!
+    var itemID:String!
+    var section:Int!
+    var row:Int!
+    
     @IBOutlet weak var lblTipo: UILabel!
     @IBOutlet weak var lblQuantidade: UILabel!
     @IBOutlet weak var lblPontos: UILabel!
@@ -21,29 +24,9 @@ class RemoveCell: UITableViewCell {
         self.lblTipo.text = item.tipo
         self.lblQuantidade.text = item.quantidade
         self.lblPontos.text = String(item.pontos)
-        self.btnRemover.section = section
-        self.btnRemover.row = row
-    }
-    
-    @IBAction func removerPontos(sender: AnyObject) {
-        let button = sender as! AddButton
-
-        let database = RealmManager.sharedInstance()
         
-        let itens = database.objectsOfType(ItemObject.self, identifier: "itemID", value: button.itemID)
-        if let item = itens?.first {
-            let identifier = item.identifier
-            database.delete(item)
-            
-            if database.hasObjectOfType(ItemObject.self, withIdentifier:identifier) == false {
-                let historicos = database.objectsOfType(HistoricoObject.self, withIdentifier: identifier)
-                if let historico = historicos?.first {
-                    database.delete(historico)
-                }
-            }
-        }
-        
-        self.controller.reloadDataUpdateTable()
+        self.itemID = item.itemID
+        self.section = section
+        self.row = row
     }
-    
 }
