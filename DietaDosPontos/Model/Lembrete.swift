@@ -9,17 +9,39 @@
 import UIKit
 
 class Lembrete {
+    private static var lembretesAgendados:[String]!
+    private static func containNotification(identifier:String)-> Bool{
+        if self.lembretesAgendados == nil {
+            self.lembretesAgendados = [String]()
+            let notifications = UIApplication.sharedApplication().scheduledLocalNotifications!
+            for notification in notifications {
+                let identifier = String(notification.fireDate!.timeIntervalSince1970)
+                self.lembretesAgendados!.append(identifier)
+            }
+        }
+        
+        return self.lembretesAgendados.contains(identifier)
+    }
     var notification:UILocalNotification!
     
-    static func gerarLembretesParaXDias(dias:Int) {
+    static func gerarLembretesParaXDias(x dias:Int) {
+        print("Create Local Notifications")
+        
         let calendario = NSCalendar.currentCalendar()
         calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
-        var dataAtual = NSDate()
         
         for dia in 0 ..< dias {
-            dataAtual.dateByAddingTimeInterval(NSTimeInterval(60 * 60 * 24 * dia))
+            var dataAtual = self.getCurrentLocalDate()
+            dataAtual = dataAtual.dateByAddingTimeInterval(NSTimeInterval(60 * 60 * 24 * dia))
+            
+            print("Data Calculada: ", dataAtual)
             for var hora = 7; hora <= 19; hora += 3 {
                 dataAtual = calendario.dateBySettingHour(hora, minute: 0, second: 0, ofDate: dataAtual, options: NSCalendarOptions(rawValue: 0))!
+                
+                let identifier = String(dataAtual.timeIntervalSince1970)
+                if self.containNotification(identifier) {
+                    continue
+                }
                 
                 let lembrete = Lembrete()
                 lembrete.notification = UILocalNotification()
@@ -40,6 +62,9 @@ class Lembrete {
                     break;
                 }
                 
+                print(lembrete.notification.alertBody)
+                print("FireDate \n", dataAtual)
+                
                 lembrete.notification.fireDate = dataAtual
                 UIApplication.sharedApplication().scheduleLocalNotification(lembrete.notification)
             }
@@ -48,11 +73,31 @@ class Lembrete {
     }
     
     static func printNotifications() {
+        print("Scheduled Local Notifications")
         let notifications = UIApplication.sharedApplication().scheduledLocalNotifications!
         for notification in notifications {
-            print(notification.fireDate)
+            print("scheduled: ", notification.fireDate!)
         }
         
 //        UIApplication.sharedApplication().cancelAllLocalNotifications()
+    }
+    
+    static func getCurrentLocalDate()-> NSDate {
+        var now = NSDate()
+        let nowComponents = NSDateComponents()
+        let calendar = NSCalendar.currentCalendar()
+        
+        nowComponents.year = NSCalendar.currentCalendar().component(NSCalendarUnit.Year, fromDate: now)
+        nowComponents.month = NSCalendar.currentCalendar().component(NSCalendarUnit.Month, fromDate: now)
+        nowComponents.day = NSCalendar.currentCalendar().component(NSCalendarUnit.Day, fromDate: now)
+        nowComponents.hour = NSCalendar.currentCalendar().component(NSCalendarUnit.Hour, fromDate: now)
+        nowComponents.minute = NSCalendar.currentCalendar().component(NSCalendarUnit.Minute, fromDate: now)
+        nowComponents.second = NSCalendar.currentCalendar().component(NSCalendarUnit.Second, fromDate: now)
+        
+        nowComponents.timeZone = NSTimeZone(abbreviation: "GMT")
+        
+        now = calendar.dateFromComponents(nowComponents)!
+        
+        return now
     }
 }

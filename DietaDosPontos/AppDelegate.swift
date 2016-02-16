@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Alert, categories: nil))
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Sound, categories: nil))
         
-        Lembrete.gerarLembretesParaXDias(7)
+        Lembrete.gerarLembretesParaXDias(x: 2)
         
         return true
     }
