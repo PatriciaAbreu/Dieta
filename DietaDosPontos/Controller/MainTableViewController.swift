@@ -50,10 +50,15 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
     // MARK: - SearchBar
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         
-        if let text = searchController.searchBar.text {
-            if !text.isEmpty {
-                self.filtrarDadosDaBusca(text)
-            }
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        let text = searchBar.text
+        
+        if text == nil || text!.isEmpty {
+            self.filtrarDadosDaBusca("")
+        }else {
+            self.filtrarDadosDaBusca(text!)
         }
     }
     

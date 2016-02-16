@@ -35,7 +35,7 @@ class DefaultCell: UITableViewCell {
         
         let calendario = NSCalendar.currentCalendar()
         calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
-        let dataAtual = NSDate()
+        let dataAtual = Lembrete.getCurrentLocalDate()
         
         let day = calendario.component(NSCalendarUnit.Day, fromDate: dataAtual)
         let month = calendario.component(NSCalendarUnit.Month, fromDate: dataAtual)
