@@ -79,7 +79,12 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                 
                 if !textoDaBusca.isEmpty && textoDaBusca != " " {
                     itens = itens.filter {
-                        item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+                        item in
+                        
+                        let textoBusca = textoDaBusca.lowercaseString.versaoSemAcento()
+                        let textoItem = item.tipo.lowercaseString.versaoSemAcento()
+                        
+                        return textoItem.containsString(textoBusca)
                     }
                 }
                 
@@ -104,7 +109,12 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
             
             if !textoDaBusca.isEmpty && textoDaBusca != " " {
                 itens = itens.filter {
-                    item in return item.tipo.lowercaseString.containsString(textoDaBusca.lowercaseString)
+                    item in
+                    
+                    let textoBusca = textoDaBusca.lowercaseString.versaoSemAcento()
+                    let textoItem = item.tipo.lowercaseString.versaoSemAcento()
+                    
+                    return textoItem.containsString(textoBusca)
                 }
             }
             
@@ -215,6 +225,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
             self.calendarViewController.controller = self
         }
         self.calendarViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        
+        self.menuViewController.tableView.reloadData()
         
         self.navigationController?.presentViewController(calendarViewController, animated: false, completion: nil)
     }

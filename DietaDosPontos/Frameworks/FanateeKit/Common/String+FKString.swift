@@ -7,8 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
+    
+    func versaoSemAcento()->String {
+        return self.stringByFoldingWithOptions(NSStringCompareOptions.DiacriticInsensitiveSearch, locale: NSLocale.currentLocale())
+    }
+    
     static func isNilOrWhiteSpace(var message:String?)->Bool {
         if message == nil {
             return true

@@ -211,7 +211,7 @@
 			"pontos": 20
 		}]
 	}, {
-		"nome": "Carnes",
+		"nome": "Proteínas",
 		"itens": [{
 			"tipo": "Almôndega",
 			"quantidade": "1 unidade pequena",
@@ -394,7 +394,7 @@
 			"pontos": 25
 		}]
 	}, {
-		"nome": "Saladas",
+		"nome": "0 Calorias",
 		"itens": [{
 			"tipo": "Acelga",
 			"quantidade": "0 calorias",
@@ -533,7 +533,7 @@
 			"pontos": 0
 		}]
 	}, {
-		"nome": "Vegetais",
+		"nome": "Legumes e Vegetais",
 		"itens": [{
 			"tipo": "Abóbora",
 			"quantidade": "2 colheres sopa",
@@ -841,7 +841,7 @@
 			"pontos": 15
 		}, {
 			"tipo": "Iogurte",
-			"quantidade": "1 copo grnade",
+			"quantidade": "1 copo grande",
 			"pontos": 15
 		}, {
 			"tipo": "Leite vaca integral",
@@ -904,7 +904,7 @@
 			"pontos": 35
 		}]
 	}, {
-		"nome": "Temperos",
+		"nome": "Molhos",
 		"itens": [{
 			"tipo": "Catchup",
 			"quantidade": "1 colher de sopa",
@@ -935,7 +935,7 @@
 			"pontos": 25
 		}]
 	}, {
-		"nome": "Temperos (2)",
+		"nome": "Temperos",
 		"itens": [{
 			"tipo": "Creme de leite",
 			"quantidade": "1 1/2 colher chá",
@@ -1194,7 +1194,7 @@
 			"quantidade": "1 picolé",
 			"pontos": 60
 		}, {
-			"tipo": "Toddinho",
+			"tipo": "Toddynho",
 			"quantidade": "1 unidade",
 			"pontos": 50
 		}, {
