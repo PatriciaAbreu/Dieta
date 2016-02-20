@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Lembrete.gerarLembretesParaXDias(x: 5)
         
+        Flurry.startSession("5G29Z9949NC7VQ6QQ8ZJ");
+        
         return true
     }
 

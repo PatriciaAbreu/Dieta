@@ -31,6 +31,7 @@
 		844553FA1C6F540F006557A5 /* Lembrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844553F91C6F540F006557A5 /* Lembrete.swift */; };
 		847F759E1C6D5DF7004B2E50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F759D1C6D5DF7004B2E50 /* HeaderView.swift */; };
 		847F75A01C6D634D004B2E50 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847F759F1C6D634D004B2E50 /* HeaderView.xib */; };
+		848105FA1C791357003B9675 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848105F91C791357003B9675 /* libFlurry_7.3.0.a */; };
 		84E399B01C6F67C70034EAC0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399AF1C6F67C70034EAC0 /* MenuViewController.swift */; };
 		84E399B21C6F841A0034EAC0 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E399B11C6F841A0034EAC0 /* Menu.xib */; };
 		84E399B71C6F8D480034EAC0 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E399B61C6F8D480034EAC0 /* Dispatch.swift */; };
@@ -104,6 +105,9 @@
 		844553F91C6F540F006557A5 /* Lembrete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lembrete.swift; sourceTree = "<group>"; };
 		847F759D1C6D5DF7004B2E50 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		847F759F1C6D634D004B2E50 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		848105F71C791357003B9675 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		848105F81C791357003B9675 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		848105F91C791357003B9675 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
 		84E399AF1C6F67C70034EAC0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		84E399B11C6F841A0034EAC0 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		84E399B61C6F8D480034EAC0 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8403C1141C79057900041BA3 /* SystemConfiguration.framework in Frameworks */,
+				848105FA1C791357003B9675 /* libFlurry_7.3.0.a in Frameworks */,
 				8403C1121C79057300041BA3 /* StoreKit.framework in Frameworks */,
 				8403C1101C79056D00041BA3 /* MessageUI.framework in Frameworks */,
 				8403C10D1C79056600041BA3 /* EventKit.framework in Frameworks */,
@@ -164,17 +169,6 @@
 		8418CDAC1C6D38A2006AB236 = {
 			isa = PBXGroup;
 			children = (
-				8403C1131C79057900041BA3 /* SystemConfiguration.framework */,
-				8403C1111C79057300041BA3 /* StoreKit.framework */,
-				8403C10F1C79056D00041BA3 /* MessageUI.framework */,
-				8403C10B1C79056600041BA3 /* EventKit.framework */,
-				8403C10C1C79056600041BA3 /* EventKitUI.framework */,
-				8403C1091C79055F00041BA3 /* CoreMedia.framework */,
-				8403C1071C79055800041BA3 /* CoreTelephony.framework */,
-				8403C1051C79055000041BA3 /* CoreGraphics.framework */,
-				8403C1031C79054900041BA3 /* AVFoundation.framework */,
-				8403C1011C79054200041BA3 /* AudioToolbox.framework */,
-				8403C0FF1C79053B00041BA3 /* AdSupport.framework */,
 				8418CDB71C6D38A2006AB236 /* DietaDosPontos */,
 				8418CDB61C6D38A2006AB236 /* Products */,
 			);
@@ -243,6 +237,16 @@
 				84E399E01C70098C0034EAC0 /* AddButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		848105F61C791357003B9675 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				848105F71C791357003B9675 /* Flurry.h */,
+				848105F81C791357003B9675 /* FlurryWatch.h */,
+				848105F91C791357003B9675 /* libFlurry_7.3.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		84E399B51C6F8D480034EAC0 /* Helper */ = {
@@ -326,6 +330,18 @@
 		84E399E61C700DC90034EAC0 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				848105F61C791357003B9675 /* Flurry */,
+				8403C1131C79057900041BA3 /* SystemConfiguration.framework */,
+				8403C1111C79057300041BA3 /* StoreKit.framework */,
+				8403C10F1C79056D00041BA3 /* MessageUI.framework */,
+				8403C10B1C79056600041BA3 /* EventKit.framework */,
+				8403C10C1C79056600041BA3 /* EventKitUI.framework */,
+				8403C1091C79055F00041BA3 /* CoreMedia.framework */,
+				8403C1071C79055800041BA3 /* CoreTelephony.framework */,
+				8403C1051C79055000041BA3 /* CoreGraphics.framework */,
+				8403C1031C79054900041BA3 /* AVFoundation.framework */,
+				8403C1011C79054200041BA3 /* AudioToolbox.framework */,
+				8403C0FF1C79053B00041BA3 /* AdSupport.framework */,
 				84010F8E1C78B7760092ACE6 /* GoogleMobileAds.framework */,
 				84E399E71C700DC90034EAC0 /* Realm */,
 			);
@@ -613,6 +629,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/GoogleMobileAds.framework",
+					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,6 +658,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/GoogleMobileAds.framework",
+					"$(PROJECT_DIR)/DietaDosPontos/Frameworks/Dependencies/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole;
 				PRODUCT_NAME = "$(TARGET_NAME)";

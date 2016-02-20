@@ -7,6 +7,7 @@
 //
 
 #import "DeviceInfo.h"
+#import "Flurry.h"
 
 #define appName @""
 #define appGroup @"com.paty.rafa.vidaecontrole"

@@ -36,6 +36,10 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.view.alpha = 1.0
             self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         }
+        
+        let title = "Menu Categorias"
+        let params = ["Language": Device.language(), "Description": "Abriu menu de categorias"]
+        Flurry.logEvent(title, withParameters: params)
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -69,6 +73,10 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.controller.categoriaSelecionada = nil
         default:
             self.controller.categoriaSelecionada = self.controller.dataSource[indexPath.row - 1].nome
+            
+            let title = "Categoria Selecionada: \(self.controller.categoriaSelecionada!)"
+            let params = ["Language": Device.language(), "Description": "Usuário filtrou por uma categoria"]
+            Flurry.logEvent(title, withParameters: params)
         }
         
         self.controller.mostrarItensDaCategoriaSelecionada()

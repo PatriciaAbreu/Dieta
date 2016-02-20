@@ -42,6 +42,10 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
             self.view.alpha = 1.0
             self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         }
+        
+        let title = "Histórico"
+        let params = ["Language": Device.language(), "Description": "Abriu menu do histórico"]
+        Flurry.logEvent(title, withParameters: params)
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -76,6 +80,15 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
             }
         default:
             let cell = tableView.cellForRowAtIndexPath(indexPath) as! CalendarCell
+            
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd-MM-YYYY HH:mm:ss"
+            let dataAtual = dateFormatter.stringFromDate(Lembrete.getCurrentLocalDate())
+            
+            let title = "Histórico Dia: \(dataAtual)"
+            let params = ["Data Historico": cell.identifier, "Data Atual": dataAtual, "Language": Device.language(), "Description": "Filtro histórico baseado em uma data"]
+            Flurry.logEvent(title, withParameters: params)
+
             self.controller.mostrarItensDoDia(cell.identifier)
         }
     }

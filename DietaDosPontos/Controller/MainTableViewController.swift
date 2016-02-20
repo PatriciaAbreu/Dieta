@@ -433,6 +433,10 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                     database.delete(historico)
                     apagarSessao = true
                 }
+                
+                let title = "Apagou: \(item.tipo)"
+                let params = ["Language": Device.language(), "Description": "Usuário apagou um item do histórico"]
+                Flurry.logEvent(title, withParameters: params)
             }
         }
         
