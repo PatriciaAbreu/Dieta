@@ -34,6 +34,7 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QST-GO-0I9" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
                                             <rect key="frame" x="551" y="-0.5" width="50" height="50"/>
+                                            <color key="tintColor" red="0.63921568627450975" green="0.29019607843137252" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-3" maxY="0.0"/>
                                             <state key="normal" image="btn_add"/>
@@ -78,6 +79,7 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-cT-zqg" customClass="AddButton" customModule="DietaDosPontos" customModuleProvider="target">
                                             <rect key="frame" x="551" y="-0.5" width="50" height="50"/>
+                                            <color key="tintColor" red="0.63921568630000003" green="0.2901960784" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="contentEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <state key="normal" image="btn_add"/>
                                             <connections>
@@ -184,6 +186,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cqB-gd-VbH">
                                 <rect key="frame" x="20" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.63921568630000003" green="0.2901960784" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="btn_calendar"/>
                                 <connections>
                                     <action selector="mostrarCalendario:" destination="5TV-37-eFG" eventType="touchUpInside" id="UXq-hW-I0j"/>
@@ -194,6 +197,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wsW-uE-zee">
                                 <rect key="frame" x="556" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.63921568627450975" green="0.29019607843137252" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="btn_menu"/>
                                 <connections>
                                     <action selector="mostrarCategoria:" destination="5TV-37-eFG" eventType="touchUpInside" id="m1w-9I-5ER"/>

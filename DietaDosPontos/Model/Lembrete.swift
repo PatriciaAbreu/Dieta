@@ -25,8 +25,6 @@ class Lembrete {
     var notification:UILocalNotification!
     
     static func gerarLembretesParaXDias(x dias:Int) {
-        print("Create Local Notifications")
-        
         let calendario = NSCalendar.currentCalendar()
         calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
         
@@ -34,7 +32,6 @@ class Lembrete {
             var dataAtual = self.getCurrentLocalDate()
             dataAtual = dataAtual.dateByAddingTimeInterval(NSTimeInterval(60 * 60 * 24 * dia))
             
-            print("Data Calculada: ", dataAtual)
             for var hora = 7; hora <= 19; hora += 3 {
                 dataAtual = calendario.dateBySettingHour(hora, minute: 0, second: 0, ofDate: dataAtual, options: NSCalendarOptions(rawValue: 0))!
                 
@@ -63,14 +60,11 @@ class Lembrete {
                     break;
                 }
                 
-                print(lembrete.notification.alertBody)
-                print("FireDate \n", dataAtual)
-                
                 lembrete.notification.fireDate = dataAtual
                 UIApplication.sharedApplication().scheduleLocalNotification(lembrete.notification)
             }
         }
-        self.printNotifications()
+//        self.printNotifications()
     }
     
     static func printNotifications() {

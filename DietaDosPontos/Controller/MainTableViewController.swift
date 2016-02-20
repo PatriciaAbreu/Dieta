@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class MainTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
+class MainTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, GADInterstitialDelegate {
+    
+    // MARK: - Interstitial
+    var interstitial: GADInterstitial!
+    var mostrouInterstitial = false
+    
     static var mainTableView:UITableView!
     
     var menuViewController:MenuViewController!
@@ -36,9 +42,54 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         self.searchController.searchBar.barTintColor = UIColor(hexString: "#f0eff4")
         
         MainTableViewController.mainTableView = self.tableView
+        
+         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        self.interstitial = self.createAndLoadInterstitial()
+    }
+    
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-9907427876489592/4345181465")
+        interstitial.delegate = self
+        let request = GADRequest()
+//        request.testDevices = ["d87ea138ed102e1b6ba5a92b243d3fef"]
+        interstitial.loadRequest(request)
+        return interstitial
+    }
+    
+    func interstitialDidReceiveAd(ad: GADInterstitial!) {
+        if self.interstitial.isReady && self.mostrouInterstitial == false {
+            self.mostrouInterstitial = true
+            self.interstitial.presentFromRootViewController(self)
+            self.interstitial = self.createAndLoadInterstitial()
+        }
     }
 
     override func viewDidAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("saindoDoApp"), name: "saiuDoApp", object: nil)
+    }
+    
+    func saindoDoApp() {
+        self.mostrouInterstitial = false
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "saiuDoApp", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("voltandoAoApp"), name: "voltouAoApp", object: nil)
+    }
+    
+    func voltandoAoApp() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "voltouAoApp", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("saindoDoApp"), name: "saiuDoApp", object: nil)
+        
+        delay(1.0) {
+            if self.interstitial.isReady && self.mostrouInterstitial == false {
+                self.interstitial.presentFromRootViewController(self)
+            }else {
+                self.interstitial = self.createAndLoadInterstitial()
+            }
+        }
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
         
     }
     
@@ -309,7 +360,7 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
             let img =
             UIImage(named: "btn_added")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             self.feedbackView = UIImageView(image: img)
-            self.feedbackView.tintColor = UIColor(hexString: "#007AFF")
+            self.feedbackView.tintColor = UIColor(hexString: "#a34af0")
             
             self.navigationController!.view.addSubview(self.feedbackView)
         }

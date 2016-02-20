@@ -14,13 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
-        
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Badge, categories: nil))
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Alert, categories: nil))
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:UIUserNotificationType.Sound, categories: nil))
         
-        Lembrete.gerarLembretesParaXDias(x: 2)
+        Lembrete.gerarLembretesParaXDias(x: 5)
         
         return true
     }
@@ -33,10 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("saiuDoApp", object: nil)
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("voltouAoApp", object: nil)
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
