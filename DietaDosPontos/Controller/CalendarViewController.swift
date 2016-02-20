@@ -38,7 +38,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         
         self.view.frame = CGRect(x: Screen.width() * -0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         
-        UIView.animateWithDuration(1.0) { () -> Void in
+        UIView.animateWithDuration(0.3) { () -> Void in
             self.view.alpha = 1.0
             self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         }
@@ -48,7 +48,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         let location = (touches.first?.locationInView(self.view))
         
         if location!.x > self.background.frame.width {
-            UIView.animateWithDuration(1.0) { () -> Void in
+            UIView.animateWithDuration(0.3) { () -> Void in
                 self.view.alpha = 0.0
                 self.view.frame = CGRect(x: Screen.width() * -0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
             }

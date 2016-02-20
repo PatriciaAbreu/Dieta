@@ -226,7 +226,7 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         }
         self.calendarViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
         
-        self.menuViewController.tableView.reloadData()
+        self.menuViewController?.tableView?.reloadData()
         
         self.navigationController?.presentViewController(calendarViewController, animated: false, completion: nil)
     }
