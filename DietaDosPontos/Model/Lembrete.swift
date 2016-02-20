@@ -46,6 +46,7 @@ class Lembrete {
                 let lembrete = Lembrete()
                 lembrete.notification = UILocalNotification()
                 lembrete.notification.timeZone = calendario.timeZone
+                lembrete.notification.soundName = UILocalNotificationDefaultSoundName
                 
                 switch hora {
                 case 7:
