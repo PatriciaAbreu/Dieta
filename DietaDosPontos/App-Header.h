@@ -9,7 +9,7 @@
 #import "DeviceInfo.h"
 
 #define appName @""
-#define appGroup @""
+#define appGroup @"com.paty.rafa.vidaecontrole"
 
 // Definir ambiente de uso
 #define DEV

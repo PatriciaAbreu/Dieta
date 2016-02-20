@@ -43,7 +43,7 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         
         MainTableViewController.mainTableView = self.tableView
         
-         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         self.interstitial = self.createAndLoadInterstitial()
     }
     
@@ -58,6 +58,11 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
     }
     
     func interstitialDidReceiveAd(ad: GADInterstitial!) {
+        let defaults:NSUserDefaults = NSUserDefaults()
+        if defaults.boolForKey("acessado") == false {
+            defaults.setBool(true, forKey: "acessado")
+            return
+        }
         if self.interstitial.isReady && self.mostrouInterstitial == false {
             self.mostrouInterstitial = true
             self.interstitial.presentFromRootViewController(self)
