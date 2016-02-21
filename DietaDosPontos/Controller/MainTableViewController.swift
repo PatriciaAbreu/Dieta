@@ -140,7 +140,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                         let textoBusca = textoDaBusca.lowercaseString.versaoSemAcento()
                         let textoItem = item.tipo.lowercaseString.versaoSemAcento()
                         
-                        return textoItem.containsString(textoBusca)
+                        let pontoItem = String(item.pontos)
+                        return textoItem.containsString(textoBusca) || textoBusca == pontoItem
                     }
                 }
                 
@@ -170,7 +171,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                     let textoBusca = textoDaBusca.lowercaseString.versaoSemAcento()
                     let textoItem = item.tipo.lowercaseString.versaoSemAcento()
                     
-                    return textoItem.containsString(textoBusca)
+                    let pontoItem = String(item.pontos)
+                    return textoItem.containsString(textoBusca) || textoBusca == pontoItem
                 }
             }
             

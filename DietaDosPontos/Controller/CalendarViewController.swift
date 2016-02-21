@@ -82,7 +82,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
             let cell = tableView.cellForRowAtIndexPath(indexPath) as! CalendarCell
             
             let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "dd-MM-YYYY HH:mm:ss"
+            dateFormatter.dateFormat = "dd-MM-YYYY"
             let dataAtual = dateFormatter.stringFromDate(Lembrete.getCurrentLocalDate())
             
             let title = "Histórico Dia: \(dataAtual)"
