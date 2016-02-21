@@ -26,7 +26,7 @@
             <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="xjS-Ox-9BJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0aN-fX-DZA"/>
-                <constraint firstAttribute="trailing" secondItem="Xhp-eH-ppj" secondAttribute="trailing" constant="10" id="VsB-nr-JvB"/>
+                <constraint firstAttribute="trailing" secondItem="Xhp-eH-ppj" secondAttribute="trailing" constant="8" id="VsB-nr-JvB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
