@@ -58,7 +58,7 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
     }
     
     func interstitialDidReceiveAd(ad: GADInterstitial!) {
-        let defaults:NSUserDefaults = NSUserDefaults()
+        let defaults:NSUserDefaults = NSUserDefaults(suiteName: "group.com.paty.rafa.vidaecontrole")!
         if defaults.boolForKey("acessado") == false {
             defaults.setBool(true, forKey: "acessado")
             return

@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import ClockKit
 import Foundation
 
 class MainController: WKInterfaceController  {

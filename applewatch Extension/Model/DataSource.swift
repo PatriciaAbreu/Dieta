@@ -8,6 +8,7 @@
 
 import Foundation
 import WatchConnectivity
+import ClockKit
 
 enum DataSourceType {
     case Categoria, Historico
@@ -158,6 +159,16 @@ class DataSource:NSObject {
     }
     
     private func criarHistoricoComJSON(json:String)-> [Historico] {
+        let calendario = NSCalendar.currentCalendar()
+        calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
+        let dataAtual = ComplicationController.getCurrentLocalDate()
+        
+        let day = calendario.component(NSCalendarUnit.Day, fromDate: dataAtual)
+        let month = calendario.component(NSCalendarUnit.Month, fromDate: dataAtual)
+        let year = calendario.component(NSCalendarUnit.Year, fromDate: dataAtual)
+        
+        let hoje = "\(day)-\(month)-\(year)"
+        
         var historicos = [Historico]()
         let jsonData = json.dataUsingEncoding(NSUTF8StringEncoding)
         
@@ -182,6 +193,22 @@ class DataSource:NSObject {
                 
                 let historico = Historico(titulo: titulo, itens: itens, totalDePontos: total)
                 historicos.append(historico)
+
+                if historicoJSON["identifier"] as! String == hoje {
+                    let defaults:NSUserDefaults = NSUserDefaults(suiteName: "group.com.paty.rafa.vidaecontrole")!
+                    
+                    let pontosAntes = defaults.stringForKey("pontosDeHoje")
+                    
+                    defaults.setObject(String(total), forKey: "pontosDeHoje")
+                    defaults.setObject(hoje, forKey: "identificador")
+                    
+                    if pontosAntes != String(total) {
+                        let complicationServer = CLKComplicationServer.sharedInstance()
+                        for complication in complicationServer.activeComplications {
+                            complicationServer.reloadTimelineForComplication(complication)
+                        }
+                    }
+                }
             }
             
             self.currentDataSourceHistorico = historicos

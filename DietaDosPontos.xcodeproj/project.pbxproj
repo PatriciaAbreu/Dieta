@@ -219,6 +219,9 @@
 		84E7F7831C7A031E00A2CD4F /* DeleteRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRow.swift; sourceTree = "<group>"; };
 		84E7F7851C7A258B00A2CD4F /* DataSource+AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataSource+AppDelegate.swift"; sourceTree = "<group>"; };
 		84E7F78B1C7A980100A2CD4F /* HeaderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderRow.swift; sourceTree = "<group>"; };
+		84E7F7921C7ABFF800A2CD4F /* DietaDosPontos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DietaDosPontos.entitlements; sourceTree = "<group>"; };
+		84E7F7931C7AC06000A2CD4F /* applewatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = applewatch.entitlements; sourceTree = "<group>"; };
+		84E7F7941C7AC07300A2CD4F /* applewatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "applewatch Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +280,7 @@
 		8418CDB71C6D38A2006AB236 /* DietaDosPontos */ = {
 			isa = PBXGroup;
 			children = (
+				84E7F7921C7ABFF800A2CD4F /* DietaDosPontos.entitlements */,
 				8418CDD71C6D416C006AB236 /* database.json */,
 				84E399FF1C70E7B10034EAC0 /* InfoPlist.strings */,
 				84E399F21C700E8C0034EAC0 /* DBObject */,
@@ -346,6 +350,7 @@
 		848105FE1C794FA4003B9675 /* applewatch */ = {
 			isa = PBXGroup;
 			children = (
+				84E7F7931C7AC06000A2CD4F /* applewatch.entitlements */,
 				848105FF1C794FA4003B9675 /* Interface.storyboard */,
 				848106021C794FA4003B9675 /* Assets.xcassets */,
 				848106041C794FA4003B9675 /* Info.plist */,
@@ -356,6 +361,7 @@
 		8481060D1C794FA4003B9675 /* applewatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				84E7F7941C7AC07300A2CD4F /* applewatch Extension.entitlements */,
 				848106281C79CBF4003B9675 /* Controller */,
 				8481062B1C79CBF4003B9675 /* Model */,
 				848106101C794FA4003B9675 /* ExtensionDelegate.swift */,
@@ -576,13 +582,29 @@
 					8418CDB41C6D38A2006AB236 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = HY94TZQ7S2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					848105FC1C794FA4003B9675 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = HY94TZQ7S2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					848106081C794FA4003B9675 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HY94TZQ7S2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -862,6 +884,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DietaDosPontos/DietaDosPontos.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -891,6 +914,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DietaDosPontos/DietaDosPontos.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -919,10 +943,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "applewatch Extension/applewatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "applewatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -934,10 +962,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "applewatch Extension/applewatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "applewatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -949,13 +981,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applewatch/applewatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = applewatch_Extension;
 				INFOPLIST_FILE = applewatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -967,13 +1002,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = applewatch/applewatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = applewatch_Extension;
 				INFOPLIST_FILE = applewatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paty.rafa.vidaecontrole.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

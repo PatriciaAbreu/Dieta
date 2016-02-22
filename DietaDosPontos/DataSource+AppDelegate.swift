@@ -86,7 +86,7 @@ extension AppDelegate: WCSessionDelegate {
             itensObject = itensObject.sorted("date", ascending: true)
             
             json += "\"titulo\":\"" + nome + "\""
-            
+            json += ",\"identifier\":\"" + historico.identifier + "\""
             json += ",\"itens\":["
             var j = 0
             for itemObject in itensObject {
@@ -115,6 +115,8 @@ extension AppDelegate: WCSessionDelegate {
         }
         
         json += "]"
+        
+        self.session?.transferCurrentComplicationUserInfo(["":""])
         
         return json
     }
