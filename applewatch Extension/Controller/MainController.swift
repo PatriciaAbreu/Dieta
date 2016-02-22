@@ -79,6 +79,7 @@ class MainController: WKInterfaceController  {
                 row.tipo = item.itens[j].tipo
                 row.quantidade = item.itens[j].quantidade
                 row.pontos = item.itens[j].pontos
+                row.identificador = item.itens[j].identifier
             }
         }
         
@@ -110,11 +111,11 @@ class MainController: WKInterfaceController  {
                 for j in 0 ..< item.itens.count {
                     let row:DeleteRow = self.table.rowControllerAtIndex(index++) as! DeleteRow
                     
-                    let item = item.itens[j]
-                    row.lblTipo.setText(item.tipo)
-                    row.lblQuantidade.setText(item.quantidade)
-                    row.lblPontos.setText(String(item.pontos))
-                    row.itemID = item.itemID
+                    row.lblTipo.setText(item.itens[j].tipo)
+                    row.lblQuantidade.setText(item.itens[j].quantidade)
+                    row.lblPontos.setText(String(item.itens[j].pontos))
+                    row.itemID = item.itens[j].itemID
+                    row.identificador = item.itens[j].identifier
                 }
             }
         }

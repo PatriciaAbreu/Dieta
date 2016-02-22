@@ -183,6 +183,7 @@ class DataSource:NSObject {
                     let itemJSON = itensJSON[j] as! [String:AnyObject]
                     let item = Item(tipo: itemJSON["tipo"] as! String, quantidade: itemJSON["quantidade"] as! String, pontos: itemJSON["pontos"] as! Int)
                     item.itemID = itemJSON["itemID"] as! String
+                    item.identifier = itemJSON["identifier"] as! String
                     itens.append(item)
                 }
                 
@@ -212,11 +213,11 @@ class DataSource:NSObject {
         return historicos
     }
     
-    func adicionarPontos(tipo:String, quantidade:String, pontos:Int) {
+    func adicionarPontos(tipo:String, quantidade:String, pontos:Int, identificador:String) {
         if WCSession.isSupported() {
             self.session = WCSession.defaultSession()
             
-            self.session?.sendMessage(["action": "adicionarPontos", "tipo": tipo, "quantidade": quantidade, "pontos": pontos], replyHandler: { (response) -> Void in
+            self.session?.sendMessage(["action": "adicionarPontos", "tipo": tipo, "quantidade": quantidade, "pontos": pontos, "identificador": identificador], replyHandler: { (response) -> Void in
                 
                 if let success = response["success"] as? Bool {
                     if success {
@@ -243,11 +244,11 @@ class DataSource:NSObject {
         }
     }
     
-    func removerPontos(itemID:String) {
+    func removerPontos(itemID:String, identificador:String) {
         if WCSession.isSupported() {
             self.session = WCSession.defaultSession()
             
-            self.session?.sendMessage(["action": "removerPontos", "itemID": itemID], replyHandler: { (response) -> Void in
+            self.session?.sendMessage(["action": "removerPontos", "itemID": itemID, "identificador": identificador], replyHandler: { (response) -> Void in
                 
                 if let success = response["success"] as? Bool {
                     if success {
@@ -293,7 +294,9 @@ class DataSource:NSObject {
             self.dadosFiltradosHistorico = historicos
             
             self.contemModificacoes = true
-            MainController.object.reloadData()
+            if self.currentType == .Historico {
+                MainController.object.reloadData(false)
+            }
         }
     }
 }

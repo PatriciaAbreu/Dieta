@@ -11,12 +11,14 @@ import Foundation
 import WatchKit
 
 class DefaultRow:NSObject {
+    static var processandoRequisicao = false
+    
     @IBOutlet var lblTipo: WKInterfaceLabel!
     @IBOutlet var lblQuantidade: WKInterfaceLabel!
     @IBOutlet var lblPontos: WKInterfaceLabel!
     @IBOutlet var groupFundoBotao: WKInterfaceGroup!
     
-    static var processandoRequisicao = false
+    var identificador:String!
     
     var tipo: String! {
         didSet {
@@ -46,6 +48,6 @@ class DefaultRow:NSObject {
         }
         
         MainController.object.rowUltimoItemAdicionado = self
-        DataSource.sharedInstance().adicionarPontos(self.tipo, quantidade: self.quantidade, pontos: self.pontos)
+        DataSource.sharedInstance().adicionarPontos(self.tipo, quantidade: self.quantidade, pontos: self.pontos, identificador: self.identificador)
     }
 }

@@ -18,6 +18,7 @@ class DeleteRow:NSObject {
     @IBOutlet var groupFundoBotao: WKInterfaceGroup!
     
     var itemID:String!
+    var identificador:String!
     
     static var processandoRequisicao = false
     
@@ -31,6 +32,6 @@ class DeleteRow:NSObject {
         }
         
         MainController.object.rowUltimoItemRemovido = self
-        DataSource.sharedInstance().removerPontos(self.itemID)
+        DataSource.sharedInstance().removerPontos(self.itemID, identificador: self.identificador)
     }
 }

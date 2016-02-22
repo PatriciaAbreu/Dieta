@@ -24,10 +24,7 @@ extension AppDelegate: WCSessionDelegate {
                 
                 self.adicionarPontos(tipo, quantidade: quantidade, pontos: pontos)
                 
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    replyHandler(["success": true, "historicos": self.gerarHistoricos(identificador)])
-                    
-                    })
+                replyHandler(["success": true, "historicos": self.gerarHistoricos(identificador)])
             case "removerPontos":
                 var identificador = message["identificador"] as? String
                 if identificador == "" {
@@ -37,10 +34,7 @@ extension AppDelegate: WCSessionDelegate {
                 let itemID = message["itemID"] as! String
                 self.removerPontos(itemID)
                 
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    replyHandler(["success": true, "historicos": self.gerarHistoricos(identificador)])
-                    
-                })
+                replyHandler(["success": true, "historicos": self.gerarHistoricos(identificador)])
             default:
                 break
             }
@@ -219,7 +213,7 @@ extension AppDelegate: WCSessionDelegate {
             }
         }
         
-        self.session?.transferCurrentComplicationUserInfo(["identificador": identificador, "pontosDeHoje": String(total), "historicos": self.gerarHistoricos(nil)])
+        self.session?.transferCurrentComplicationUserInfo(["identificador": identificador, "pontosDeHoje": String(total), "historicos": self.gerarHistoricos(identificador)])
     }
 }
 
