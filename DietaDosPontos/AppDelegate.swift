@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activateSession()
+            }
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -21,6 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Lembrete.gerarLembretesParaXDias(x: 5)
         
         Flurry.startSession("5G29Z9949NC7VQ6QQ8ZJ");
+        
+        if WCSession.isSupported() {
+            self.session = WCSession.defaultSession()
+        }
         
         return true
     }

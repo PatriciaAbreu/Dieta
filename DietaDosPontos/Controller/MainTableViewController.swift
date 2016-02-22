@@ -426,6 +426,10 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         
         let itens = database.objectsOfType(ItemObject.self, identifier: "itemID", value: cell.itemID)
         if let item = itens?.first {
+            let title = "Apagou: \(item.tipo)"
+            let params = ["Language": Device.language(), "Description": "Usuário apagou um item do histórico"]
+            Flurry.logEvent(title, withParameters: params)
+            
             let identifier = item.identifier
             database.delete(item)
             
@@ -435,10 +439,6 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                     database.delete(historico)
                     apagarSessao = true
                 }
-                
-                let title = "Apagou: \(item.tipo)"
-                let params = ["Language": Device.language(), "Description": "Usuário apagou um item do histórico"]
-                Flurry.logEvent(title, withParameters: params)
             }
         }
         

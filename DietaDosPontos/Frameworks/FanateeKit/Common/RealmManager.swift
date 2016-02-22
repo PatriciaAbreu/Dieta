@@ -20,7 +20,7 @@ class RealmManager {
         return Static.instance
     }
     
-    private init(sharedInstance: Bool) {
+    init(sharedInstance: Bool) {
         var configuration = Realm.Configuration.defaultConfiguration
         configuration.schemaVersion = 0
         configuration.migrationBlock = { (migration:Migration, oldSchemaVersion:UInt64) ->  Void in
