@@ -79,7 +79,6 @@ class MainController: WKInterfaceController  {
                 row.tipo = item.itens[j].tipo
                 row.quantidade = item.itens[j].quantidade
                 row.pontos = item.itens[j].pontos
-                row.identificador = item.itens[j].identifier
             }
         }
         

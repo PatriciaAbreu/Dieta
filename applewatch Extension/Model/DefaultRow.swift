@@ -18,8 +18,6 @@ class DefaultRow:NSObject {
     @IBOutlet var lblPontos: WKInterfaceLabel!
     @IBOutlet var groupFundoBotao: WKInterfaceGroup!
     
-    var identificador:String!
-    
     var tipo: String! {
         didSet {
             self.lblTipo.setText(self.tipo)
@@ -48,6 +46,6 @@ class DefaultRow:NSObject {
         }
         
         MainController.object.rowUltimoItemAdicionado = self
-        DataSource.sharedInstance().adicionarPontos(self.tipo, quantidade: self.quantidade, pontos: self.pontos, identificador: self.identificador)
+        DataSource.sharedInstance().adicionarPontos(self.tipo, quantidade: self.quantidade, pontos: self.pontos)
     }
 }

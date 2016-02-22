@@ -213,11 +213,11 @@ class DataSource:NSObject {
         return historicos
     }
     
-    func adicionarPontos(tipo:String, quantidade:String, pontos:Int, identificador:String) {
+    func adicionarPontos(tipo:String, quantidade:String, pontos:Int) {
         if WCSession.isSupported() {
             self.session = WCSession.defaultSession()
             
-            self.session?.sendMessage(["action": "adicionarPontos", "tipo": tipo, "quantidade": quantidade, "pontos": pontos, "identificador": identificador], replyHandler: { (response) -> Void in
+            self.session?.sendMessage(["action": "adicionarPontos", "tipo": tipo, "quantidade": quantidade, "pontos": pontos], replyHandler: { (response) -> Void in
                 
                 if let success = response["success"] as? Bool {
                     if success {
