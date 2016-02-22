@@ -4,15 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - applewatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>DietaDosPontos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>applewatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>8418CDB41C6D38A2006AB236</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>848105FC1C794FA4003B9675</key>
 		<dict>
 			<key>primary</key>
 			<true/>
