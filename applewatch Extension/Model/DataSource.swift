@@ -121,14 +121,9 @@ class DataSource:NSObject {
     }
     
     func filtrarPorHistorico(index:Int) {
-        switch index {
-        case 0:
-            self.removerFiltros()
-        default:
-            let historico = self.dataSourceHistoricos[index - 1]
-            self.dadosFiltradosHistorico.removeAll()
-            self.dadosFiltradosHistorico.append(historico)
-        }
+        let historico = self.dataSourceHistoricos[index]
+        self.dadosFiltradosHistorico.removeAll()
+        self.dadosFiltradosHistorico.append(historico)
         
         self.contemModificacoes = true
     }
@@ -277,6 +272,28 @@ class DataSource:NSObject {
                 }, errorHandler: { (error) -> Void in
                     print(error)
             })
+        }
+    }
+    
+    func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
+        let defaults:NSUserDefaults = NSUserDefaults(suiteName: "group.com.paty.rafa.vidaecontrole")!
+        defaults.setObject(userInfo["pontosDeHoje"], forKey: "pontosDeHoje")
+        defaults.setObject(userInfo["identificador"], forKey: "identificador")
+        
+        let complicationServer = CLKComplicationServer.sharedInstance()
+        for complication in complicationServer.activeComplications {
+            complicationServer.reloadTimelineForComplication(complication)
+        }
+        
+        if let json = userInfo["historicos"] as? String {
+            let historicos = self.criarHistoricoComJSON(json)
+            
+            self.dataSourceHistoricos = historicos
+            self.currentDataSourceHistorico = historicos
+            self.dadosFiltradosHistorico = historicos
+            
+            self.contemModificacoes = true
+            MainController.object.reloadData()
         }
     }
 }

@@ -454,6 +454,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
                 self.reloadDataUpdateTable()
             })
         }
+        
+        (UIApplication.sharedApplication().delegate as! AppDelegate).atualizarComplecation()
     }
 }
 

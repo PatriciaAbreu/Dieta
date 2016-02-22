@@ -39,23 +39,18 @@ class HistoricoController: WKInterfaceController  {
     //MARK: - Tabela
     func reloadData() {
         if self.dataSource.currentDataSourceHistorico != nil {
-            
             if self.dataSource.currentDataSourceHistorico.count == 0 {
                 self.lblVazio.setText("Nenhum registro")
                 self.lblVazio.setHidden(false)
             }else {
                 self.lblVazio.setHidden(true)
-                self.table.setNumberOfRows(self.dataSource.currentDataSourceHistorico.count + 1, withRowType: "menuRow")
+                self.table.setNumberOfRows(self.dataSource.currentDataSourceHistorico.count, withRowType: "menuRow")
                 
-                for i in 0 ... self.dataSource.currentDataSourceHistorico.count {
+                for i in 0 ..< self.dataSource.currentDataSourceHistorico.count {
                     let row:MenuRow = self.table.rowControllerAtIndex(i) as! MenuRow
                     
-                    if i == 0 {
-                        row.lblTitulo.setText("Mostrar tudo")
-                    }else {
-                        let historico = self.dataSource.currentDataSourceHistorico[i - 1]
-                        row.lblTitulo.setText(historico.titulo)
-                    }
+                    let historico = self.dataSource.currentDataSourceHistorico[i]
+                    row.lblTitulo.setText(historico.titulo)
                 }
             }
             self.table.scrollToRowAtIndex(0)

@@ -74,5 +74,7 @@ class DefaultCell: UITableViewCell {
         let title = "Adicionou: \(self.controller.dadosFiltrados[section][row].tipo)"
         let params = ["Language": Device.language(), "Description": "Usuário adicionou um item ao histórico"]
         Flurry.logEvent(title, withParameters: params)
+        
+        (UIApplication.sharedApplication().delegate as! AppDelegate).atualizarComplecation()
     }
 }

@@ -116,8 +116,6 @@ extension AppDelegate: WCSessionDelegate {
         
         json += "]"
         
-        self.session?.transferCurrentComplicationUserInfo(["":""])
-        
         return json
     }
     
@@ -191,6 +189,37 @@ extension AppDelegate: WCSessionDelegate {
         }
         
         return apagarSessao
+    }
+    
+    func atualizarComplecation() {
+        let calendario = NSCalendar.currentCalendar()
+        calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
+        let dataAtual = Lembrete.getCurrentLocalDate()
+        
+        let day = calendario.component(NSCalendarUnit.Day, fromDate: dataAtual)
+        let month = calendario.component(NSCalendarUnit.Month, fromDate: dataAtual)
+        let year = calendario.component(NSCalendarUnit.Year, fromDate: dataAtual)
+        
+        let identificador = "\(day)-\(month)-\(year)"
+        
+        let database = RealmManager(sharedInstance: false)
+        
+        var historicos = database.objectsOfType(HistoricoObject.self, withIdentifier: identificador)!
+        historicos = historicos.sorted("date", ascending: false)
+        
+        var total = 0
+        
+        for historico in historicos {
+            var itensObject = database.objectsOfType(ItemObject.self, withIdentifier: historico.identifier)!
+            
+            itensObject = itensObject.sorted("date", ascending: true)
+            
+            for itemObject in itensObject {
+                total += itemObject.pontos
+            }
+        }
+        
+        self.session?.transferCurrentComplicationUserInfo(["identificador": identificador, "pontosDeHoje": String(total), "historicos": self.gerarHistoricos(nil)])
     }
 }
 
