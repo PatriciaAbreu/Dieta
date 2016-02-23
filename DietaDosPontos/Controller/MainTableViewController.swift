@@ -45,6 +45,12 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         
         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         self.interstitial = self.createAndLoadInterstitial()
+        
+        if Device.isPhone6() || Device.isPhone6Plus() || Device.isPad() {
+            self.title = "Tabela de Correlações Energéticas"
+        }else {
+            self.title = "Correlações Energéticas"
+        }
     }
     
     
@@ -294,6 +300,12 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         self.currentDataSource = self.dataSource
         
         self.filtrarDadosDaBusca(" ")
+        
+        if Device.isPhone6() || Device.isPhone6Plus() || Device.isPad() {
+            self.title = "Tabela de Correlações Energéticas"
+        }else {
+            self.title = "Correlações Energéticas"
+        }
     }
     
     func mostrarItensDoDia(identificador:String?) {
@@ -352,6 +364,8 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         
         self.dadosFiltrados = self.currentDataSource
         self.tableView.reloadData()
+        
+        self.title = "Histórico"
     }
     
     func reloadDataUpdateTable() {

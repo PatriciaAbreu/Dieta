@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -37,6 +38,7 @@
                         <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dEg-4r-zUj" firstAttribute="height" secondItem="wf4-Qh-7tM" secondAttribute="height" id="4BR-Ys-0WZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dEg-4r-zUj" secondAttribute="trailing" id="LWc-nK-3TO"/>
                             <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" constant="52" id="WY7-yc-9Yr"/>
                             <constraint firstAttribute="bottom" secondItem="CBI-dQ-nOZ" secondAttribute="bottom" id="h3J-m4-GCV"/>
                             <constraint firstItem="CBI-dQ-nOZ" firstAttribute="width" secondItem="wf4-Qh-7tM" secondAttribute="width" id="u1a-bL-HIb"/>
@@ -45,6 +47,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="wf4-Qh-7tM" firstAttribute="height" secondItem="7bX-EL-1Il" secondAttribute="height" id="6Gi-8v-RQj"/>
+                    <constraint firstItem="wf4-Qh-7tM" firstAttribute="leading" secondItem="7bX-EL-1Il" secondAttribute="leadingMargin" constant="-20" id="t5o-oH-dKN"/>
                 </constraints>
             </view>
             <connections>
