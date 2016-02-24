@@ -21,25 +21,37 @@
                         <rect key="frame" x="379" y="0.0" width="220" height="600"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CBI-dQ-nOZ">
-                                <rect key="frame" x="0.0" y="52" width="367" height="548"/>
+                                <rect key="frame" x="0.0" y="52" width="220" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filtrar por categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uej-ed-CVc">
-                                <rect key="frame" x="13" y="23" width="151" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEg-4r-zUj" userLabel="Line">
-                                <rect key="frame" x="-1" y="0.0" width="2" height="600"/>
+                                <rect key="frame" x="-1" y="0.0" width="1" height="600"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpB-3y-PeH">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="64"/>
+                                <items>
+                                    <navigationItem title="Categorias" id="KVM-K8-05H">
+                                        <barButtonItem key="rightBarButtonItem" image="btn_back_right" style="plain" id="mgT-3J-Fn1">
+                                            <color key="tintColor" red="0.63921568630000003" green="0.2901960784" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="voltar:" destination="gRx-Dk-ixk" id="AtX-TH-u9R"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dEg-4r-zUj" firstAttribute="height" secondItem="wf4-Qh-7tM" secondAttribute="height" id="4BR-Ys-0WZ"/>
                             <constraint firstAttribute="bottom" secondItem="CBI-dQ-nOZ" secondAttribute="bottom" id="6jv-qe-TQB"/>
-                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" constant="52" id="74a-bT-42c"/>
+                            <constraint firstAttribute="trailing" secondItem="qpB-3y-PeH" secondAttribute="trailing" id="6n4-xI-jsz"/>
+                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" constant="64" id="74a-bT-42c"/>
+                            <constraint firstItem="qpB-3y-PeH" firstAttribute="leading" secondItem="wf4-Qh-7tM" secondAttribute="leading" id="8kM-KH-NuF"/>
+                            <constraint firstItem="qpB-3y-PeH" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" id="Dro-5H-xMs"/>
+                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="qpB-3y-PeH" secondAttribute="bottom" id="Z7n-MD-2QR"/>
+                            <constraint firstItem="qpB-3y-PeH" firstAttribute="width" secondItem="wf4-Qh-7tM" secondAttribute="width" id="ZPH-qb-ibZ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -55,4 +67,7 @@
             <point key="canvasLocation" x="689" y="-743"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="btn_back_right" width="24" height="24"/>
+    </resources>
 </document>

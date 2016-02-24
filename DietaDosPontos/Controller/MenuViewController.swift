@@ -46,14 +46,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let location = (touches.first?.locationInView(self.view))
         
         if location!.x < self.background.frame.origin.x {
-            UIView.animateWithDuration(0.3) { () -> Void in
-                self.view.alpha = 0.0
-                self.view.frame = CGRect(x: Screen.width() * 0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-            }
-            
-            delay(1.0, closure: { () -> () in
-                self.dismissViewControllerAnimated(false, completion: nil)
-            })
+            self.fecharJanela()
         }
     }
     
@@ -98,5 +91,20 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         return cell
+    }
+    
+    @IBAction func voltar(sender: AnyObject) {
+        self.fecharJanela()
+    }
+    
+    func fecharJanela() {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.view.alpha = 0.0
+            self.view.frame = CGRect(x: Screen.width() * 0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        }
+        
+        delay(1.0, closure: { () -> () in
+            self.dismissViewControllerAnimated(false, completion: nil)
+        })
     }
 }

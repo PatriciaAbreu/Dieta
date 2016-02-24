@@ -52,14 +52,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         let location = (touches.first?.locationInView(self.view))
         
         if location!.x > self.background.frame.width {
-            UIView.animateWithDuration(0.3) { () -> Void in
-                self.view.alpha = 0.0
-                self.view.frame = CGRect(x: Screen.width() * -0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-            }
-            
-            delay(1.0, closure: { () -> () in
-                self.dismissViewControllerAnimated(false, completion: nil)
-            })
+            self.fecharJanela()
         }
     }
     
@@ -141,5 +134,19 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         for historico in historicos {
             self.dataSource.append(historico as HistoricoObject)
         }
+    }
+    @IBAction func voltar(sender: AnyObject) {
+        self.fecharJanela()
+    }
+    
+    func fecharJanela() {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.view.alpha = 0.0
+            self.view.frame = CGRect(x: Screen.width() * -0.5, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        }
+        
+        delay(1.0, closure: { () -> () in
+            self.dismissViewControllerAnimated(false, completion: nil)
+        })
     }
 }

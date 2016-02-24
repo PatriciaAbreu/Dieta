@@ -27,21 +27,39 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histórico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uej-ed-CVc">
                                 <rect key="frame" x="13" y="23" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEg-4r-zUj" userLabel="Line">
-                                <rect key="frame" x="215" y="0.0" width="2" height="600"/>
+                                <rect key="frame" x="215" y="0.0" width="1" height="600"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ve-vM-IdG">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="44"/>
+                                <items>
+                                    <navigationItem title="Hitórico" id="Aat-nV-hfE">
+                                        <barButtonItem key="leftBarButtonItem" image="btn_back_left" style="plain" id="nbJ-wE-lG7">
+                                            <color key="tintColor" red="0.63921568630000003" green="0.2901960784" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="voltar:" destination="gRx-Dk-ixk" id="GQ5-bu-ITv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dEg-4r-zUj" firstAttribute="height" secondItem="wf4-Qh-7tM" secondAttribute="height" id="4BR-Ys-0WZ"/>
-                            <constraint firstAttribute="trailing" secondItem="dEg-4r-zUj" secondAttribute="trailing" id="LWc-nK-3TO"/>
-                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" constant="52" id="WY7-yc-9Yr"/>
+                            <constraint firstItem="3Ve-vM-IdG" firstAttribute="leading" secondItem="wf4-Qh-7tM" secondAttribute="leading" id="4ME-Na-C9W"/>
+                            <constraint firstItem="3Ve-vM-IdG" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" id="EYN-nB-diw"/>
+                            <constraint firstAttribute="trailing" secondItem="dEg-4r-zUj" secondAttribute="trailing" constant="-1" id="LWc-nK-3TO"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ve-vM-IdG" secondAttribute="trailing" id="OjY-1q-772"/>
+                            <constraint firstItem="3Ve-vM-IdG" firstAttribute="width" secondItem="wf4-Qh-7tM" secondAttribute="width" id="OrU-vj-O5F"/>
+                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="wf4-Qh-7tM" secondAttribute="top" constant="64" id="WY7-yc-9Yr"/>
                             <constraint firstAttribute="bottom" secondItem="CBI-dQ-nOZ" secondAttribute="bottom" id="h3J-m4-GCV"/>
-                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="width" secondItem="wf4-Qh-7tM" secondAttribute="width" id="u1a-bL-HIb"/>
+                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="width" secondItem="wf4-Qh-7tM" secondAttribute="width" id="os8-cQ-sJd"/>
+                            <constraint firstItem="CBI-dQ-nOZ" firstAttribute="top" secondItem="3Ve-vM-IdG" secondAttribute="bottom" id="uAU-Ld-Ow0"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -57,4 +75,7 @@
             <point key="canvasLocation" x="689" y="-743"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="btn_back_left" width="24" height="24"/>
+    </resources>
 </document>
