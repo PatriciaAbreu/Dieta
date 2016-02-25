@@ -25,6 +25,7 @@ class DefaultCell: UITableViewCell {
         self.btnAdicionar.row = row
     }
     
+    var dia = 10
     @IBAction func adicionarPontos(sender: AnyObject) {
         let button = sender as! AddButton
         let section = button.section
@@ -35,7 +36,8 @@ class DefaultCell: UITableViewCell {
         
         let calendario = NSCalendar.currentCalendar()
         calendario.timeZone = NSTimeZone(abbreviation: "GMT")!
-        let dataAtual = Lembrete.getCurrentLocalDate()
+        var dataAtual = Lembrete.getCurrentLocalDate()
+        dataAtual = dataAtual.dateByAddingTimeInterval(NSTimeInterval(60 * 60 * 24 * dia))
         
         let day = calendario.component(NSCalendarUnit.Day, fromDate: dataAtual)
         let month = calendario.component(NSCalendarUnit.Month, fromDate: dataAtual)
