@@ -169,10 +169,19 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-e2-yDZ">
+                                            <rect key="frame" x="475" y="10" width="90" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YbT-e2-yDZ" secondAttribute="trailing" constant="8" id="fgw-CB-RRh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lblData" destination="WvD-Hv-V8S" id="zKL-Tc-RUQ"/>
+                                    <outlet property="lblTotal" destination="YbT-e2-yDZ" id="TeD-O4-tgP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

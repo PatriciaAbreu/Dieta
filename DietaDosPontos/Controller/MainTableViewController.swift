@@ -308,6 +308,28 @@ class MainTableViewController: UITableViewController, UISearchResultsUpdating, U
         }
     }
     
+    func totalDePontosDoDia(identificador:String)-> Int {
+        let database = RealmManager.sharedInstance()
+        
+        let historicos = database.objectsOfType(HistoricoObject.self, withIdentifier: identificador)!
+        
+        if historicos.count == 0 {
+            return 0
+        }
+        
+        var total = 0
+        for historico in historicos {
+            var itensObject = database.objectsOfType(ItemObject.self, withIdentifier: historico.identifier)!
+            
+            itensObject = itensObject.sorted("date", ascending: true)
+            
+            for itemObject in itensObject {
+                total += itemObject.pontos
+            }
+        }
+        return total
+    }
+    
     func mostrarItensDoDia(identificador:String?) {
         self.mostrandoHistorico = true
         self.identificadorSelecionado = identificador

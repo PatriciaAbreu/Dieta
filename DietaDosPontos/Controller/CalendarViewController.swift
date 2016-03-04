@@ -111,10 +111,24 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
             let day = calendario.component(NSCalendarUnit.Day, fromDate: data)
             let month = calendario.component(NSCalendarUnit.Month, fromDate: data)
             let year = calendario.component(NSCalendarUnit.Year, fromDate: data)
+            
+            var strDay = String(day)
+            if day < 10 {
+                strDay = "0" + strDay
+            }
+            
+            var strMonth = String(month)
+            if month < 10 {
+                strMonth = "0" + strMonth
+            }
+            
+            let identificador = "\(day)-\(month)-\(year)"
+            let total = controller.totalDePontosDoDia(identificador)
+            cell.lblTotal.text = String(total)
                 
-            let texto = "\(day)/\(month)/\(year)"
+            let texto = "\(strDay)/\(strMonth)/\(year)"
             cell.lblData.text = texto
-            cell.identifier = "\(day)-\(month)-\(year)"
+            cell.identifier = identificador
         }
         
         return cell

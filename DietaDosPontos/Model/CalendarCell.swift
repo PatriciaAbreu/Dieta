@@ -13,6 +13,7 @@ class CalendarCell: UITableViewCell {
     var identifier = ""
     @IBOutlet weak var lblData: UILabel!
     
+    @IBOutlet weak var lblTotal: UILabel!
     func definirValoresBaseadoDataString(dataString:String) {
         self.lblData.text = dataString
     }
